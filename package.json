@@ -7,10 +7,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/google/blockly.git"
+    "url": "https://github.com/NTU-AI/ntu-blockly.git"
   },
   "bugs": {
-    "url": "https://github.com/google/blockly/issues"
+    "url": "https://github.com/NTU-AI/ntu-blockly/issues"
   },
   "homepage": "https://developers.google.com/blockly/",
   "author": {

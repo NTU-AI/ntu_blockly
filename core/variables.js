@@ -165,7 +165,7 @@ const flyoutCategoryBlocks = function(workspace) {
     if (Blocks['math_change']) {
       const block = utilsXml.createElement('block');
       block.setAttribute('type', 'math_change');
-      block.setAttribute('gap', Blocks['variables_get'] ? 20 : 8);
+      block.setAttribute('gap', Blocks['variables_call'] ? 8 : 24);
       block.appendChild(generateVariableFieldDom(mostRecentVariable));
       const value = Xml.textToDom(
           '<value name="DELTA">' +
@@ -174,6 +174,14 @@ const flyoutCategoryBlocks = function(workspace) {
           '</shadow>' +
           '</value>');
       block.appendChild(value);
+      xmlList.push(block);
+    }
+
+    if (Blocks['variables_call']) {
+      const block = utilsXml.createElement('block');
+      block.setAttribute('type', 'variables_call');
+      block.setAttribute('gap', Blocks['variables_get'] ? 20 : 8);
+      block.appendChild(generateVariableFieldDom(mostRecentVariable));
       xmlList.push(block);
     }
 

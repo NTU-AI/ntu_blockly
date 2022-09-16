@@ -72,6 +72,27 @@ const blocks = createBlockDefinitionsFromJsonArray([
     'helpUrl': '%{BKY_VARIABLES_SET_HELPURL}',
     'extensions': ['contextMenu_variableSetterGetter'],
   },
+  {
+    'type': 'variables_call',
+    'message0': 'call %1 method %2',
+    'args0': [
+      {
+        'type': 'field_variable',
+        'name': 'VAR',
+        'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
+      },
+      {
+        'type': 'input_value',
+        'name': 'VALUE',
+      },
+    ],
+    'previousStatement': null,
+    'nextStatement': null,
+    'style': 'variable_blocks',
+    'tooltip': '%{BKY_VARIABLES_SET_TOOLTIP}',
+    'helpUrl': '%{BKY_VARIABLES_SET_HELPURL}',
+    'extensions': ['contextMenu_variableSetterGetter'],
+  },
 ]);
 exports.blocks = blocks;
 
