@@ -17,6 +17,16 @@ Help us focus our development efforts by telling us [what you are doing with
 Blockly](https://developers.google.com/blockly/registration).  The questionnaire only takes
 a few minutes and will help us better support the Blockly community.
 
+### Building Blockly
+
+```bash
+npm run package
+```
+
+Comentário em [https://github.com/google/blockly/issues/6403](https://github.com/google/blockly/issues/6403)
+
+Renomear dist para Blockly
+
 ### Installing Blockly
 
 Blockly is [available on npm](https://www.npmjs.com/package/blockly).
