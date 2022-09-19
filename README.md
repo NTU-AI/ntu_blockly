@@ -25,14 +25,14 @@ npm run package
 
 Comentário em [https://github.com/google/blockly/issues/6403](https://github.com/google/blockly/issues/6403)
 
-Renomear dist para Blockly
+Renomear dist/ para blockly/
 
 ### Installing Blockly
 
 Blockly is [available on npm](https://www.npmjs.com/package/blockly).
 
 ```bash
-npm install blockly
+npm install https://gitpkg.now.sh/NTU-AI/ntu-blockly/blockly?master
 ```
 
 For more information on installing and using Blockly, see the [Getting Started article](https://developers.google.com/blockly/guides/get-started/web).
