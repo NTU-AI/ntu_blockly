@@ -34,8 +34,13 @@ Python['variables_set'] = function(block) {
 Python['variables_call'] = function(block) {
   // Variable getter.
   const argument0 =
-      Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '__str__()';
+      parseJsonReturn(Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)) || '__str__()';
   const varName =
       Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return varName + '.' + argument0 + '\n';
 };
+
+const parseJsonReturn = (str) => {
+  str = str.substring(1,str.length-1).replace(/\s+/g,"")
+  return JSON.parse(str)
+}
