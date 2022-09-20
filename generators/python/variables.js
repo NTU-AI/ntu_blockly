@@ -33,11 +33,13 @@ Python['variables_set'] = function(block) {
 
 Python['variables_call'] = function(block) {
   // Variable getter.
-  var jsonCodeInfo = parseJsonReturn(Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)) || '__str__()'
+  var jsonCodeInfo = parseJsonReturn(Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)) 
+  console.log(jsonCodeInfo)
+  console.log("ABC")
   var _linebreak = block.parentBlock_ ? "" : "\n"
   const argument0 =
-      // Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '__str__()';
-      jsonCodeInfo.code
+      Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '__str__()';
+      // jsonCodeInfo.code || '__str__()'
   const varName =
       Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return varName + '.' + argument0 + '\n';
