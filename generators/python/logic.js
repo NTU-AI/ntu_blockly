@@ -13,6 +13,13 @@ goog.module('Blockly.Python.logic');
 
 const Python = goog.require('Blockly.Python');
 
+Python['rangesensor_getrange_block'] = function(block){
+  var dropdown_unit = block.getFieldValue('unit');
+  // var code = "getRange(" + dropdown_unit + ")\n" 
+  var code = `getRange('${dropdown_unit}')` 
+  // console.log(dropdown_unit)
+  return [`{"code": "${code}","type": "Number"}`, Python.ORDER_NONE];
+}
 
 Python['controls_if'] = function(block) {
   // If/elseif/else condition.

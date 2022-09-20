@@ -38,7 +38,41 @@ goog.require('Blockly.FieldLabel');
  * A dictionary of the block definitions provided by this module.
  * @type {!Object<string, !BlockDefinition>}
  */
+console.log("Importou logic.js")
+
 const blocks = createBlockDefinitionsFromJsonArray([
+  {
+    'type': 'rangesensor_getrange_block',
+    "message0": "GetRange %1 %2 %3",
+    "args0": [
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "field_dropdown",
+        "name": "unit",
+        "options": [
+          [
+            "m",
+            "m"
+          ],
+          [
+            "cm",
+            "cm"
+          ]
+        ]
+      },
+      {
+        "type": "input_value",
+        "name": "NAME"
+      }
+    ],
+    "inputsInline": true,
+    "output": "Any",
+    'style': 'logic_blocks',
+    'tooltip': '',
+    'helpUrl': '',
+  },
   // Block for boolean data type: true and false.
   {
     'type': 'logic_boolean',

@@ -558,12 +558,16 @@ start();
         </block>
       </value>
     </block>
+    <block type="rangesensor_getrange_block"></block>
   </xml>
 
   <!-- toolbox-categories has a category menu and an auto-closing flyout.  The
   Variables category uses untyped variable blocks.
   See https://developers.google.com/blockly/guides/create-custom-blocks/variables#untyped_variable_blocks for more information. -->
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox-categories" style="display: none">
+    <category name="Sensors" >
+      <block type="rangesensor_getrange_block"></block>
+    </category>
     <category name="Logic" categorystyle="logic_category">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
