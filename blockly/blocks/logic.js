@@ -38,6 +38,8 @@ goog.require('Blockly.FieldLabel');
  * A dictionary of the block definitions provided by this module.
  * @type {!Object<string, !BlockDefinition>}
  */
+console.log("Importou logic.js")
+
 const blocks = createBlockDefinitionsFromJsonArray([
   {
     'type': 'rangesensor_getrange_block',
@@ -66,7 +68,31 @@ const blocks = createBlockDefinitionsFromJsonArray([
       }
     ],
     "inputsInline": true,
-    "output": "Number",
+    "output": "Any",
+    'style': 'logic_blocks',
+    'tooltip': '',
+    'helpUrl': '',
+  },
+  {
+    'type': 'convbelt_setstate_block',
+    "message0": "SetState %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "state",
+        "options": [
+          [
+            "on",
+            "on"
+          ],
+          [
+            "off",
+            "off"
+          ]
+        ]
+      }
+    ],
+    "inputsInline": true,
     'style': 'logic_blocks',
     'tooltip': '',
     'helpUrl': '',

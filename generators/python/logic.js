@@ -15,9 +15,13 @@ const Python = goog.require('Blockly.Python');
 
 Python['rangesensor_getrange_block'] = function(block){
   var dropdown_unit = block.getFieldValue('unit');
-  // var code = "getRange(" + dropdown_unit + ")\n" 
   var code = `getRange('${dropdown_unit}')` 
-  // console.log(dropdown_unit)
+  return [`{"code": "${code}","type": "Number"}`, Python.ORDER_NONE];
+}
+
+Python['convbelt_setstate_block'] = function(block){
+  var value_state = block.getFieldValue('state')
+  var code = `setConveyorState('${value_state}')` 
   return [`{"code": "${code}","type": "Number"}`, Python.ORDER_NONE];
 }
 

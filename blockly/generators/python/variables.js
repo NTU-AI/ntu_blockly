@@ -33,22 +33,35 @@ Python['variables_set'] = function(block) {
 
 Python['variables_call'] = function(block) {
   // Variable getter.
+  // var jsonCodeInfo = parseJsonReturn(Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)) || '__str__()'
+  // var _linebreak = block.parentBlock_ ? "" : "\n"
+  // const argument0 =
+  //     Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '__str__()';
+  //     // jsonCodeInfo.code
+  // const varName =
+  //     Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
+  // return varName + '.' + argument0 + '\n';
+
   var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)
-  console.log(blockReturn)
+  const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   if(blockReturn != ""){
     var jsonCodeInfo = parseJsonReturn(blockReturn)
     var _linebreak = block.parentBlock_ ? "" : "\n"
-    const argument0 =
-        Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '__str__()';
-        // jsonCodeInfo.code || '__str__()'
-    const varName =
-        Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
+    var code = varName + "." +  jsonCodeInfo.code + _linebreak 
+    console.log(code)
+    if(jsonCodeInfo.type != ""){
+        block.setOutput(true,jsonCodeInfo.type)
+        return [code, Python.ORDER_NONE]
+    }
+    else {
+        block.setOutput(false,"")
+        return code
+    }
   }
-  const argument0 = "";
-  return varName + '.' + argument0 + '\n';
+  return ""
 };
 
 const parseJsonReturn = (str) => {
-  str = str.substring(1,str.length-1).replace(/\s+/g,"")
+  // str = str.substring(1,str.length-1).replace(/\s+/g,"")
   return JSON.parse(str)
 }
