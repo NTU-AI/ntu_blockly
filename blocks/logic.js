@@ -38,7 +38,6 @@ goog.require('Blockly.FieldLabel');
  * A dictionary of the block definitions provided by this module.
  * @type {!Object<string, !BlockDefinition>}
  */
-console.log("Importou logic.js")
 
 const blocks = createBlockDefinitionsFromJsonArray([
   {
