@@ -44,6 +44,33 @@ goog.require('Blockly.Warning');
 const blocks = createBlockDefinitionsFromJsonArray([
   // Block for repeat n times (external number).
   {
+    'type': 'setup',
+    'message0': 'Setup %1',
+    'args0': [{
+      'type': 'input_statement',
+      'name': 'DO',
+    }],
+    'message1': 'Return %1',
+    'args1': [{
+      'type': 'input_value',
+      'name': 'RETURN',
+    }],
+    'style': 'loop_blocks',
+    'tooltip': '%{BKY_CONTROLS_REPEAT_TOOLTIP}',
+    'helpUrl': '%{BKY_CONTROLS_REPEAT_HELPURL}',
+  },
+  {
+    'type': 'run',
+    'message0': 'Run %1',
+    'args0': [{
+      'type': 'input_statement',
+      'name': 'DO',
+    }],
+    'style': 'loop_blocks',
+    'tooltip': '%{BKY_CONTROLS_REPEAT_TOOLTIP}',
+    'helpUrl': '%{BKY_CONTROLS_REPEAT_HELPURL}',
+  },
+  {
     'type': 'controls_repeat_ext',
     'message0': '%{BKY_CONTROLS_REPEAT_TITLE}',
     'args0': [{
