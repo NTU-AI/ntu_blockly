@@ -46,7 +46,8 @@ Python['variables_call'] = function(block) {
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   if(blockReturn != ""){
     var jsonCodeInfo = parseJsonReturn(blockReturn)
-    var _linebreak = block.parentBlock_ ? "" : "\n"
+    // var _linebreak = block.parentBlock_ ? "" : "\n"
+    var _linebreak = "\n"
     var code = varName + "." +  jsonCodeInfo.code + _linebreak 
     console.log(code)
     if(jsonCodeInfo.type != ""){
