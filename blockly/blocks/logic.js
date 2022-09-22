@@ -41,12 +41,36 @@ goog.require('Blockly.FieldLabel');
 
 const blocks = createBlockDefinitionsFromJsonArray([
   {
+    'type': 'setup',
+    'message0': 'Setup %1',
+    'args0': [{
+      'type': 'input_statement',
+      'name': 'DO',
+    }],
+    'message1': 'Return %1',
+    'args1': [{
+      'type': 'input_value',
+      'name': 'RETURN',
+    }],
+    'style': 'loop_blocks',
+    'tooltip': '%{BKY_CONTROLS_REPEAT_TOOLTIP}',
+    'helpUrl': '%{BKY_CONTROLS_REPEAT_HELPURL}',
+  },
+  {
+    'type': 'run',
+    'message0': 'Run %1',
+    'args0': [{
+      'type': 'input_statement',
+      'name': 'DO',
+    }],
+    'style': 'loop_blocks',
+    'tooltip': '%{BKY_CONTROLS_REPEAT_TOOLTIP}',
+    'helpUrl': '%{BKY_CONTROLS_REPEAT_HELPURL}',
+  },
+  {
     'type': 'rangesensor_getrange_block',
-    "message0": "GetRange %1 %2 %3",
+    "message0": "GetRange %1",
     "args0": [
-      {
-        "type": "input_dummy"
-      },
       {
         "type": "field_dropdown",
         "name": "unit",
@@ -61,10 +85,6 @@ const blocks = createBlockDefinitionsFromJsonArray([
           ]
         ]
       },
-      {
-        "type": "input_value",
-        "name": "NAME"
-      }
     ],
     "inputsInline": true,
     "output": "Any",
@@ -92,6 +112,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
       }
     ],
     "inputsInline": true,
+    "output": "Any",
     'style': 'logic_blocks',
     'tooltip': '',
     'helpUrl': '',

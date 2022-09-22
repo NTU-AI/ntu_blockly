@@ -15,24 +15,6 @@ const Python = goog.require('Blockly.Python');
 const stringUtils = goog.require('Blockly.utils.string');
 const {NameType} = goog.require('Blockly.Names');
 
-Python['setup'] = function(block) {
-  let branch = Python.statementToCode(block, 'DO');
-  // branch = Python.addLoopTrap(branch, block) || Python.PASS;
-  let return_value = Python.valueToCode(block,'RETURN',Python.ORDER_NONE);
-  console.log(branch);
-  // const loopVar = Python.nameDB_.getDistinctName('count', NameType.VARIABLE);
-  // const code = 'for ' + loopVar + ' in range(' + repeats + '):\n' + branch;
-  const code = 'def setup(self):\n' + branch  + "  return " + return_value
-  return code;
-};
-
-Python['run'] = function(block) {
-  let branch = Python.statementToCode(block, 'DO');
-  // const code = 'def run(self):\n' + '  while(rclpy.ok()):\n' + branch
-  const code = 'def run(self):\n' + '  while(rclpy.ok()):\n' + branch.replace(/^/gm, "  ")
-  return code;
-};
-
 Python['controls_repeat_ext'] = function(block) {
   // Repeat n times.
   let repeats;

@@ -17,7 +17,7 @@ const {NameType} = goog.require('Blockly.Names');
 
 Python['variables_get'] = function(block) {
   // Variable getter.
-  const code =
+  const code = "self." +
       Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return [code, Python.ORDER_ATOMIC];
 };
@@ -26,7 +26,7 @@ Python['variables_set'] = function(block) {
   // Variable setter.
   const argument0 =
       Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '0';
-  const varName =
+  const varName = "self." + 
       Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return varName + ' = ' + argument0 + '\n';
 };
@@ -47,16 +47,17 @@ Python['variables_call'] = function(block) {
   if(blockReturn != ""){
     var jsonCodeInfo = parseJsonReturn(blockReturn)
     // var _linebreak = block.parentBlock_ ? "" : "\n"
-    var _linebreak = "\n"
-    var code = varName + "." +  jsonCodeInfo.code + _linebreak 
+    //var _linebreak = "\n"
+    var _linebreak = ""
+    var code = "self." + varName + "." +  jsonCodeInfo.code + _linebreak 
     console.log(code)
     if(jsonCodeInfo.type != ""){
         block.setOutput(true,jsonCodeInfo.type)
-        return [code, Python.ORDER_NONE]
+        return [code, Python.ORDER_ATOMIC]
     }
     else {
         block.setOutput(false,"")
-        return code
+        return code + "\n"
     }
   }
   return ""

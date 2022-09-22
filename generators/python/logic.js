@@ -13,6 +13,24 @@ goog.module('Blockly.Python.logic');
 
 const Python = goog.require('Blockly.Python');
 
+Python['setup'] = function(block) {
+  let branch = Python.statementToCode(block, 'DO') || Python.PASS;
+  // branch = Python.addLoopTrap(branch, block) || Python.PASS;
+  let return_value = Python.valueToCode(block,'RETURN',Python.ORDER_NONE);
+  console.log(branch);
+  // const loopVar = Python.nameDB_.getDistinctName('count', NameType.VARIABLE);
+  // const code = 'for ' + loopVar + ' in range(' + repeats + '):\n' + branch;
+  const code = 'def setup(self):\n' + branch  + "  return " + return_value
+  return code;
+};
+
+Python['run'] = function(block) {
+  let branch = Python.statementToCode(block, 'DO');
+  // const code = 'def run(self):\n' + '  while(rclpy.ok()):\n' + branch
+  const code = 'def run(self):\n' + '  while(rclpy.ok()):\n' + branch.replace(/^/gm, "  ")
+  return code;
+};
+
 Python['rangesensor_getrange_block'] = function(block){
   var dropdown_unit = block.getFieldValue('unit');
   var code = `getRange('${dropdown_unit}')` 
@@ -22,7 +40,7 @@ Python['rangesensor_getrange_block'] = function(block){
 Python['convbelt_setstate_block'] = function(block){
   var value_state = block.getFieldValue('state')
   var code = `setConveyorState('${value_state}')` 
-  return [`{"code": "${code}","type": "Number"}`, Python.ORDER_NONE];
+  return [`{"code": "${code}","type": ""}`, Python.ORDER_NONE];
 }
 
 Python['controls_if'] = function(block) {
