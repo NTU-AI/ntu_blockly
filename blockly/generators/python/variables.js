@@ -51,6 +51,8 @@ Python['variables_call'] = function(block) {
     console.log(code)
     if(jsonCodeInfo.type != ""){
         block.setOutput(true,jsonCodeInfo.type)
+        this.setPreviousStatement(false, null);
+        this.setNextStatement(false, null);
         return [code, Python.ORDER_NONE]
     }
     else {
