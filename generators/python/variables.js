@@ -57,6 +57,8 @@ Python['variables_call'] = function(block) {
     }
     else {
         block.setOutput(false,"")
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
         return code
     }
   }
