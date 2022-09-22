@@ -488,6 +488,15 @@ blocks['procedures_defnoreturn'] = {
   callType_: 'procedures_callnoreturn',
 };
 
+blocks['setup_block'] = {
+  init: function() {
+    this.appendDummyInput()
+      .appendField('Setup')
+    this.appendStatementInput('DO')
+
+  }
+}
+
 blocks['procedures_defreturn'] = {
   ...PROCEDURE_DEF_COMMON,
   /**

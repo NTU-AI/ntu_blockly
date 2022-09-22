@@ -43,7 +43,6 @@ goog.require('Blockly.Warning');
  */
 const blocks = createBlockDefinitionsFromJsonArray([
   // Block for repeat n times (external number).
-
   {
     'type': 'controls_repeat_ext',
     'message0': '%{BKY_CONTROLS_REPEAT_TITLE}',

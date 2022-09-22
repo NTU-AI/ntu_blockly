@@ -12,26 +12,26 @@
 goog.module('Blockly.Python.variables');
 
 const Python = goog.require('Blockly.Python');
-const {NameType} = goog.require('Blockly.Names');
+const { NameType } = goog.require('Blockly.Names');
 
 
-Python['variables_get'] = function(block) {
+Python['variables_get'] = function (block) {
   // Variable getter.
   const code = "self." +
-      Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
+    Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return [code, Python.ORDER_ATOMIC];
 };
 
-Python['variables_set'] = function(block) {
+Python['variables_set'] = function (block) {
   // Variable setter.
   const argument0 =
-      Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '0';
-  const varName = "self." + 
-      Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
+    Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '0';
+  const varName = "self." +
+    Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   return varName + ' = ' + argument0 + '\n';
 };
 
-Python['variables_call'] = function(block) {
+Python['variables_call'] = function (block) {
   // Variable getter.
   // var jsonCodeInfo = parseJsonReturn(Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)) || '__str__()'
   // var _linebreak = block.parentBlock_ ? "" : "\n"
@@ -42,22 +42,26 @@ Python['variables_call'] = function(block) {
   //     Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
   // return varName + '.' + argument0 + '\n';
 
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)
+  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE);
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
-  if(blockReturn != ""){
-    var jsonCodeInfo = parseJsonReturn(blockReturn)
+  if (blockReturn != "") {
+    var jsonCodeInfo = parseJsonReturn(blockReturn);
     // var _linebreak = block.parentBlock_ ? "" : "\n"
     //var _linebreak = "\n"
-    var _linebreak = ""
-    var code = "self." + varName + "." +  jsonCodeInfo.code + _linebreak 
-    console.log(code)
-    if(jsonCodeInfo.type != ""){
-        block.setOutput(true,jsonCodeInfo.type)
-        return [code, Python.ORDER_ATOMIC]
+    var _linebreak = "";
+    var code = "self." + varName + "." + jsonCodeInfo.code + _linebreak;
+    console.log(code);
+    if (jsonCodeInfo.type != "") {
+      block.setOutput(true, jsonCodeInfo.type);
+      // this.setPreviousStatement(false, null);
+      // this.setNextStatement(false, null);
+      return [code, Python.ORDER_ATOMIC];
     }
     else {
-        block.setOutput(false,"")
-        return code + "\n"
+      block.setOutput(false, "");
+      // this.setPreviousStatement(true, null);
+      // this.setNextStatement(true, null);
+      return code + "\n";
     }
   }
   return ""
@@ -65,5 +69,5 @@ Python['variables_call'] = function(block) {
 
 const parseJsonReturn = (str) => {
   // str = str.substring(1,str.length-1).replace(/\s+/g,"")
-  return JSON.parse(str)
+  return JSON.parse(str);
 }
