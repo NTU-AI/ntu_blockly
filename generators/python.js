@@ -163,7 +163,7 @@ Python.init = function(workspace) {
   // Add developer variables (not created or named by the user).
   const devVarList = Variables.allDeveloperVariables(workspace);
   for (let i = 0; i < devVarList.length; i++) {
-    defvars.push(
+    defvars.push( "self." + 
         this.nameDB_.getName(devVarList[i], Names.DEVELOPER_VARIABLE_TYPE) +
         ' = None');
   }
@@ -171,7 +171,7 @@ Python.init = function(workspace) {
   // Add user variables, but only ones that are being used.
   const variables = Variables.allUsedVarModels(workspace);
   for (let i = 0; i < variables.length; i++) {
-    defvars.push(
+    defvars.push( "self." + 
         this.nameDB_.getName(variables[i].getId(), NameType.VARIABLE) +
         ' = None');
   }
