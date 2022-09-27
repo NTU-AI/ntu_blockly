@@ -86,7 +86,6 @@ const blocks = createBlockDefinitionsFromJsonArray([
         'name': 'VALUE',
       },
     ],
-    'output': null,
     'previousStatement': null,
     'nextStatement': null,
     'style': 'variable_blocks',
