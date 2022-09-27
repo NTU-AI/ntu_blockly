@@ -182,6 +182,7 @@ const flyoutCategoryBlocks = function(workspace) {
       block.setAttribute('type', 'variables_call');
       block.setAttribute('gap', Blocks['variables_get'] ? 20 : 8);
       block.appendChild(generateVariableFieldDom(mostRecentVariable));
+      block.setOutput(true,"Any");
       xmlList.push(block);
     }
 
