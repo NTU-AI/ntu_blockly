@@ -49,7 +49,7 @@ Python['variables_call'] = function(block) {
     //     block.setOutput(false,"")
     //     return code + "\n"
     // }
-    return [code, Python.ORDER_ATOMIC]
+    return code
   }
   return ""
 };
