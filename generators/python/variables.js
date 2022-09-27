@@ -41,14 +41,15 @@ Python['variables_call'] = function(block) {
     var _linebreak = ""
     var code = "self." + varName + "." +  jsonCodeInfo.code + _linebreak 
     console.log(code)
-    if(jsonCodeInfo.type != ""){
-        block.setOutput(true,jsonCodeInfo.type)
-        return [code, Python.ORDER_ATOMIC]
-    }
-    else {
-        block.setOutput(false,"")
-        return code + "\n"
-    }
+    // if(jsonCodeInfo.type != ""){
+    //     block.setOutput(true,jsonCodeInfo.type)
+    //     return [code, Python.ORDER_ATOMIC]
+    // }
+    // else {
+    //     block.setOutput(false,"")
+    //     return code + "\n"
+    // }
+    return [code, Python.ORDER_ATOMIC]
   }
   return ""
 };
