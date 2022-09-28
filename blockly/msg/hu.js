@@ -394,6 +394,8 @@ Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Levágja a megadott szöveg végeiről a sz�
 Blockly.Msg["TODAY"] = "Ma";
 Blockly.Msg["UNDO"] = "Visszavonás";
 Blockly.Msg["UNNAMED_KEY"] = "névtelen";
+Blockly.Msg["VARIABLES_CALL_OUT_TOOLTIP"] = "Returns the value of a method from current variable.";  // untranslated
+Blockly.Msg["VARIABLES_CALL_TOOLTIP"] = "Calls a method from current variable.";  // untranslated
 Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "változó";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Készíts \"%1=\"";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated

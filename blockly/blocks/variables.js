@@ -74,7 +74,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
   },
   {
     'type': 'variables_call',
-    'message0': 'call %1 method %2',
+    'message0': 'call %1 %2',
     'args0': [
       {
         'type': 'field_variable',
@@ -89,8 +89,28 @@ const blocks = createBlockDefinitionsFromJsonArray([
     'previousStatement': null,
     'nextStatement': null,
     'style': 'variable_blocks',
-    'tooltip': '%{BKY_VARIABLES_SET_TOOLTIP}',
-    'helpUrl': '%{BKY_VARIABLES_SET_HELPURL}',
+    'tooltip': '%{BKY_VARIABLES_CALL_TOOLTIP}',
+    //'helpUrl': '%{BKY_VARIABLES_CALL_HELPURL}',
+    'extensions': ['contextMenu_variableSetterGetter'],
+  },
+  {
+    'type': 'variables_call_out',
+    'message0': 'return %1 %2',
+    'args0': [
+      {
+        'type': 'field_variable',
+        'name': 'VAR',
+        'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
+      },
+      {
+        'type': 'input_value',
+        'name': 'VALUE',
+      },
+    ],
+    'style': 'variable_blocks',
+    "output": null,
+    'tooltip': '%{BKY_VARIABLES_CALL_OUT_TOOLTIP}',
+    //'helpUrl': '%{BKY_VARIABLES_CALL_OUT_HELPURL}',
     'extensions': ['contextMenu_variableSetterGetter'],
   },
 ]);

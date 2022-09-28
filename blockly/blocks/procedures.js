@@ -488,14 +488,37 @@ blocks['procedures_defnoreturn'] = {
   callType_: 'procedures_callnoreturn',
 };
 
-blocks['setup_block'] = {
-  init: function() {
-    this.appendDummyInput()
-      .appendField('Setup')
-    this.appendStatementInput('DO')
+blocks['procedures_setup'] = {
+  init: function () {
+    this.appendDummyInput().appendField("Setup");
+    this.appendStatementInput("DO").setCheck(null);
+    this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
+    this.setTooltip("");
+    this.setHelpUrl("");
+    this.setStyle('procedure_blocks');
+  },
+};
 
-  }
-}
+blocks['procedures_setup_supervisor'] = {
+  init: function () {
+    this.appendDummyInput().appendField("Setup Supervisor");
+    this.appendStatementInput("DO").setCheck(null);
+    this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
+    this.setTooltip("");
+    this.setHelpUrl("");
+    this.setStyle('procedure_blocks');
+  },
+};
+
+blocks['procedures_run'] = {
+  init: function () {
+    this.appendDummyInput().appendField("Run");
+    this.appendStatementInput("DO").setCheck(null);
+    this.setTooltip("");
+    this.setHelpUrl("");
+    this.setStyle('procedure_blocks');
+  },
+};
 
 blocks['procedures_defreturn'] = {
   ...PROCEDURE_DEF_COMMON,

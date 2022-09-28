@@ -32,26 +32,21 @@ Python['variables_set'] = function(block) {
 };
 
 Python['variables_call'] = function(block) {
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE)
+  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '{"code": "__str__()", "type": ""}';
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
-  if(blockReturn != ""){
-    var jsonCodeInfo = parseJsonReturn(blockReturn)
-    // var _linebreak = block.parentBlock_ ? "" : "\n"
-    //var _linebreak = "\n"
-    var _linebreak = ""
-    var code = "self." + varName + "." +  jsonCodeInfo.code + _linebreak 
-    console.log(code)
-    // if(jsonCodeInfo.type != ""){
-    //     block.setOutput(true,jsonCodeInfo.type)
-    //     return [code, Python.ORDER_ATOMIC]
-    // }
-    // else {
-    //     block.setOutput(false,"")
-    //     return code + "\n"
-    // }
-    return code
-  }
-  return ""
+
+  var jsonCodeInfo = parseJsonReturn(blockReturn);
+  var code = "self." + varName + "." +  jsonCodeInfo.code + "\n"
+  return code;
+};
+
+Python['variables_call_out'] = function(block) {
+  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '{"code": "__str__()", "type": ""}';
+  const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
+
+  var jsonCodeInfo = parseJsonReturn(blockReturn);
+  var code = "self." + varName + "." +  jsonCodeInfo.code
+  return [code, Python.ORDER_ATOMIC];
 };
 
 const parseJsonReturn = (str) => {
