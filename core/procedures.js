@@ -251,6 +251,33 @@ const flyoutCategory = function(workspace) {
     block.setAttribute('gap', 16);
     xmlList.push(block);
   }
+
+  const text = utilsXml.createElement('label');
+  text.setAttribute('text','Main Funcs:');
+  text.setAttribute('web-class', 'ioLabel');
+  xmlList.push(text);
+
+  if (Blocks['procedures_setup']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_setup');
+    block.setAttribute('gap', 16);
+    xmlList.push(block);
+  }
+  if (Blocks['procedures_setup_supervisor']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_setup_supervisor');
+    block.setAttribute('gap', 16);
+    xmlList.push(block);
+  }
+  if (Blocks['procedures_run']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_run');
+    block.setAttribute('gap', 16);
+    xmlList.push(block);
+  }
   if (xmlList.length) {
     // Add slightly larger gap between system blocks and user calls.
     xmlList[xmlList.length - 1].setAttribute('gap', 24);

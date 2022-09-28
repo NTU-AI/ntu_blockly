@@ -177,23 +177,35 @@ const flyoutCategoryBlocks = function(workspace) {
       xmlList.push(block);
     }
 
-    if (Blocks['variables_call']) {
-      const block = utilsXml.createElement('block');
-      block.setAttribute('type', 'variables_call');
-      block.setAttribute('gap', Blocks['variables_get'] ? 20 : 8);
-      block.appendChild(generateVariableFieldDom(mostRecentVariable));
-      xmlList.push(block);
-    }
-
     if (Blocks['variables_get']) {
       variableModelList.sort(VariableModel.compareByName);
       for (let i = 0, variable; (variable = variableModelList[i]); i++) {
         const block = utilsXml.createElement('block');
         block.setAttribute('type', 'variables_get');
-        block.setAttribute('gap', 8);
+        block.setAttribute('gap', (i === (variableModelList.length-1)) ? 24: 8);
         block.appendChild(generateVariableFieldDom(variable));
         xmlList.push(block);
       }
+    }
+
+    const text = utilsXml.createElement('label');
+    text.setAttribute('text','Method Calls:');
+    text.setAttribute('web-class', 'ioLabel');
+    xmlList.push(text);
+
+    if (Blocks['variables_call']) {
+      const block = utilsXml.createElement('block');
+      block.setAttribute('type', 'variables_call');
+      block.setAttribute('gap', Blocks['variables_call_out'] ? 8 : 24);
+      block.appendChild(generateVariableFieldDom(mostRecentVariable));
+      xmlList.push(block);
+    }
+    
+    if (Blocks['variables_call_out']) {
+      const block = utilsXml.createElement('block');
+      block.setAttribute('type', 'variables_call_out');
+      block.appendChild(generateVariableFieldDom(mostRecentVariable));
+      xmlList.push(block);
     }
   }
   return xmlList;

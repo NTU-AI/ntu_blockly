@@ -15,6 +15,8 @@ const Python = goog.require('Blockly.Python');
 const stringUtils = goog.require('Blockly.utils.string');
 const {NameType} = goog.require('Blockly.Names');
 
+const initialArg = "rclpy.ok()";
+
 Python['controls_repeat_ext'] = function(block) {
   // Repeat n times.
   let repeats;
@@ -33,7 +35,16 @@ Python['controls_repeat_ext'] = function(block) {
   let branch = Python.statementToCode(block, 'DO');
   branch = Python.addLoopTrap(branch, block) || Python.PASS;
   const loopVar = Python.nameDB_.getDistinctName('count', NameType.VARIABLE);
-  const code = 'for ' + loopVar + ' in range(' + repeats + '):\n' + branch;
+
+  let code = "";
+  
+  // if(initialArg !== ""){
+  //   code = 'for ' + loopVar + ' in range(' + repeats + ')):\n  if('+initialArg+'):' + branch;
+  // }
+  // else{
+    code = 'for ' + loopVar + ' in range(' + repeats + '):\n' + branch;
+  //}
+
   return code;
 };
 
@@ -51,7 +62,13 @@ Python['controls_whileUntil'] = function(block) {
   if (until) {
     argument0 = 'not ' + argument0;
   }
-  return 'while ' + argument0 + ':\n' + branch;
+
+  if(initialArg !== ""){
+    return 'while ' + initialArg + ' and (' + argument0 + '):\n' + branch;
+  }
+  else{
+    return 'while ' + argument0 + ':\n' + branch;
+  }
 };
 
 Python['controls_for'] = function(block) {
