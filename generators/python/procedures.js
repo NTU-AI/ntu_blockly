@@ -71,10 +71,8 @@ Python['procedures_defreturn'] = function(block) {
   }
   const args = ['self'];
   const variables = block.getVars();
-  for (let i = 0; i < variables.length; i++) {
-    if(args[i] !== 'self'){
-      args[i] = Python.nameDB_.getName(variables[i], NameType.VARIABLE);
-    }
+  for (let i = 1; i < variables.length; i++) {
+    args[i] = Python.nameDB_.getName(variables[i], NameType.VARIABLE);
   }
 
   // REMOVENDO O GLOBAL STRING
