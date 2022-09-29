@@ -69,9 +69,9 @@ Python['procedures_defreturn'] = function(block) {
   } else if (!branch) {
     branch = Python.PASS;
   }
-  const args = [];
+  const args = ['self'];
   const variables = block.getVars();
-  for (let i = 0; i < variables.length; i++) {
+  for (let i = 1; i < variables.length; i++) {
     args[i] = Python.nameDB_.getName(variables[i], NameType.VARIABLE);
   }
 
@@ -79,7 +79,7 @@ Python['procedures_defreturn'] = function(block) {
   // let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' + globalString +
   //     xfix1 + loopTrap + branch + xfix2 + returnValue;
 
-  let code = 'def ' + funcName + '(self, ' + args.join(', ') + '):\n' +
+  let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' +
       xfix1 + loopTrap + branch + xfix2 + returnValue;
   code = Python.scrub_(block, code);
   // Add % so as not to collide with helper functions in definitions list.
