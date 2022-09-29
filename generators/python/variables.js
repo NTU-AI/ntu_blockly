@@ -32,7 +32,12 @@ Python['variables_set'] = function(block) {
 };
 
 Python['variables_call'] = function(block) {
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '{"code": "__str__()", "type": ""}';
+  var jsonCode = {
+    "code": "__str__()",
+    "type": ""
+  }
+
+  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || JSON.stringify(jsonCode);
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
 
   var jsonCodeInfo = parseJsonReturn(blockReturn);
@@ -41,7 +46,12 @@ Python['variables_call'] = function(block) {
 };
 
 Python['variables_call_out'] = function(block) {
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || '{"code": "__str__()", "type": ""}';
+  var jsonCode = {
+    "code": "__str__()",
+    "type": ""
+  }
+  
+  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || JSON.stringify(jsonCode);
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
 
   var jsonCodeInfo = parseJsonReturn(blockReturn);
