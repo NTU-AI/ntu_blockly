@@ -339,6 +339,9 @@ declare namespace Blockly.Msg {
   let PROCEDURES_DEFRETURN_TITLE : string ;
   let PROCEDURES_DEFRETURN_TOOLTIP : string ;
   let PROCEDURES_DEF_DUPLICATE_WARNING : string ;
+  let PROCEDURES_SETUP_TOOLTIP : string;
+  let PROCEDURES_SETUP_SUPERVISOR_TOOLTIP : string;
+  let PROCEDURES_RUN_TOOLTIP : string;
   let PROCEDURES_HIGHLIGHT_DEF : string ;
   let PROCEDURES_HUE : string ;
   let PROCEDURES_IFRETURN_HELPURL : string ;

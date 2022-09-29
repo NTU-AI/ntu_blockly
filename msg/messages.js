@@ -1527,6 +1527,18 @@ Blockly.Msg.PROCEDURES_ALLOW_STATEMENTS = 'allow statements';
 Blockly.Msg.PROCEDURES_DEF_DUPLICATE_WARNING = 'Warning: This function has duplicate parameters.';
 
 /** @type {string} */
+/// tooltip - This is the block that implements the setup of the code
+Blockly.Msg.PROCEDURES_SETUP_TOOLTIP = 'Block that contains the blocks related to the setup of the program.';
+
+/** @type {string} */
+/// tooltip - This is the block that implements the setup of the supervisor code
+Blockly.Msg.PROCEDURES_SETUP_SUPERVISOR_TOOLTIP = 'Block that contains the blocks related to the setup of the supervisor.';
+
+/** @type {string} */
+/// tooltip - This is the block that implements the execution of the code
+Blockly.Msg.PROCEDURES_RUN_TOOLTIP = 'Block that contains the blocks related to the execution of the program.';
+
+/** @type {string} */
 /// {{Optional}} url - Information about calling [https://en.wikipedia.org/wiki/Subroutine functions] that do not return values.
 Blockly.Msg.PROCEDURES_CALLNORETURN_HELPURL = 'https://en.wikipedia.org/wiki/Subroutine';
 /** @type {string} */
