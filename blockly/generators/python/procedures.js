@@ -74,7 +74,12 @@ Python['procedures_defreturn'] = function(block) {
   for (let i = 0; i < variables.length; i++) {
     args[i] = Python.nameDB_.getName(variables[i], NameType.VARIABLE);
   }
-  let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' + globalString +
+
+  // REMOVENDO O GLOBAL STRING
+  // let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' + globalString +
+  //     xfix1 + loopTrap + branch + xfix2 + returnValue;
+
+  let code = 'def ' + funcName + '(self, ' + args.join(', ') + '):\n' +
       xfix1 + loopTrap + branch + xfix2 + returnValue;
   code = Python.scrub_(block, code);
   // Add % so as not to collide with helper functions in definitions list.
@@ -149,7 +154,7 @@ Python["procedures_setup_supervisor"] = function (block) {
     Python.ORDER_NONE
   );
   const code =
-    "def setup(self,actors):\n" + branch + "  return " + return_value + "\n";
+    "def setup(self, actors):\n" + branch + "  return " + return_value + "\n";
   return code;
 };
 
