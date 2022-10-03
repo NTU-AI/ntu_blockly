@@ -100,7 +100,7 @@ Python['procedures_callreturn'] = function(block) {
   for (let i = 0; i < variables.length; i++) {
     args[i] = Python.valueToCode(block, 'ARG' + i, Python.ORDER_NONE) || 'None';
   }
-  const code = funcName + '(' + args.join(', ') + ')';
+  const code = 'self.' + funcName + '(' + args.join(', ') + ')';
   return [code, Python.ORDER_FUNCTION_CALL];
 };
 
