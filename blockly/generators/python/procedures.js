@@ -75,11 +75,15 @@ Python['procedures_defreturn'] = function(block) {
     args[i+1] = Python.nameDB_.getName(variables[i], NameType.VARIABLE);
   }
 
+  var initVariables = "";
+  for(let i = 1; i < args.length; i++){
+    initVariables = initVariables + Python.INDENT + "self." + args[i] + " = " + args[i] + "\n";   
+  }
   // REMOVENDO O GLOBAL STRING
   // let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' + globalString +
   //     xfix1 + loopTrap + branch + xfix2 + returnValue;
 
-  let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' +
+  let code = 'def ' + funcName + '(' + args.join(', ') + '):\n' + initVariables +
       xfix1 + loopTrap + branch + xfix2 + returnValue;
   code = Python.scrub_(block, code);
   // Add % so as not to collide with helper functions in definitions list.
@@ -100,7 +104,7 @@ Python['procedures_callreturn'] = function(block) {
   for (let i = 0; i < variables.length; i++) {
     args[i] = Python.valueToCode(block, 'ARG' + i, Python.ORDER_NONE) || 'None';
   }
-  const code = funcName + '(' + args.join(', ') + ')';
+  const code = 'self.' + funcName + '(' + args.join(', ') + ')';
   return [code, Python.ORDER_FUNCTION_CALL];
 };
 
