@@ -147,7 +147,7 @@ Python['lists_getIndex'] = function(block) {
       break;
     }
     case 'RANDOM':
-      Python.definitions_['import_random'] = 'import random';
+      // Python.definitions_['import_random'] = 'import random';
       if (mode === 'GET') {
         const code = 'random.choice(' + list + ')';
         return [code, Python.ORDER_FUNCTION_CALL];
@@ -224,7 +224,7 @@ Python['lists_setIndex'] = function(block) {
       break;
     }
     case 'RANDOM': {
-      Python.definitions_['import_random'] = 'import random';
+      // Python.definitions_['import_random'] = 'import random';
       let code = cacheList();
       const xVar = Python.nameDB_.getDistinctName('tmp_x', NameType.VARIABLE);
       code += xVar + ' = int(random.random() * len(' + list + '))\n';
@@ -274,7 +274,7 @@ Python['lists_getSublist'] = function(block) {
       // Ensure that if the result calculated is 0 that sub-sequence will
       // include all elements as expected.
       if (!stringUtils.isNumber(String(at2))) {
-        Python.definitions_['import_sys'] = 'import sys';
+        // Python.definitions_['import_sys'] = 'import sys';
         at2 += ' or sys.maxsize';
       } else if (at2 === 0) {
         at2 = '';

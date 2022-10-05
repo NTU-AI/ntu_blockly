@@ -22,7 +22,7 @@ Python['colour_picker'] = function(block) {
 
 Python['colour_random'] = function(block) {
   // Generate a random colour.
-  Python.definitions_['import_random'] = 'import random';
+  // Python.definitions_['import_random'] = 'import random';
   const code = '\'#%06x\' % random.randint(0, 2**24 - 1)';
   return [code, Python.ORDER_FUNCTION_CALL];
 };
