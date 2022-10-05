@@ -142,7 +142,7 @@ Python["procedures_setup"] = function (block) {
     Python.ORDER_NONE
   );
   const code =
-    "def setup(self):\n" + branch + "  return " + return_value + "\n";
+    "def setup(self):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
   return code;
 };
 
@@ -154,7 +154,7 @@ Python["procedures_setup_supervisor"] = function (block) {
     Python.ORDER_NONE
   );
   const code =
-    "def setup(self, actors):\n" + branch + "  return " + return_value + "\n";
+    "def setup(self, actors):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
   return code;
 };
 

@@ -32,34 +32,17 @@ Python['variables_set'] = function(block) {
 };
 
 Python['variables_call'] = function(block) {
-  var jsonCode = {
-    "code": "__str__()",
-    "type": ""
-  }
-
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || JSON.stringify(jsonCode);
+  const argument0 = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || "__str__()";
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
 
-  var jsonCodeInfo = parseJsonReturn(blockReturn);
-  var code = "self." + varName + "." +  jsonCodeInfo.code + "\n"
+  var code = "self." + varName + "." +  argument0 + "\n"
   return code;
 };
 
 Python['variables_call_out'] = function(block) {
-  var jsonCode = {
-    "code": "__str__()",
-    "type": ""
-  }
-  
-  var blockReturn = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || JSON.stringify(jsonCode);
+  const argument0 = Python.valueToCode(block, 'VALUE', Python.ORDER_NONE) || "__str__()";
   const varName = Python.nameDB_.getName(block.getFieldValue('VAR'), NameType.VARIABLE);
 
-  var jsonCodeInfo = parseJsonReturn(blockReturn);
-  var code = "self." + varName + "." +  jsonCodeInfo.code
+  var code = "self." + varName + "." +  argument0
   return [code, Python.ORDER_ATOMIC];
 };
-
-const parseJsonReturn = (str) => {
-  // str = str.substring(1,str.length-1).replace(/\s+/g,"")
-  return JSON.parse(str)
-}
