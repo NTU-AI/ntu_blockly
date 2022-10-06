@@ -147,7 +147,7 @@ Python['text_charAt'] = function(block) {
       return [code, Python.ORDER_MEMBER];
     }
     case 'RANDOM': {
-      Python.definitions_['import_random'] = 'import random';
+      // Python.definitions_['import_random'] = 'import random';
       const functionName = Python.provideFunction_('text_random_letter', `
 def ${Python.FUNCTION_NAME_PLACEHOLDER_}(text):
   x = int(random.random() * len(text))
@@ -194,7 +194,7 @@ Python['text_getSubstring'] = function(block) {
       // Ensure that if the result calculated is 0 that sub-sequence will
       // include all elements as expected.
       if (!stringUtils.isNumber(String(at2))) {
-        Python.definitions_['import_sys'] = 'import sys';
+        // Python.definitions_['import_sys'] = 'import sys';
         at2 += ' or sys.maxsize';
       } else if (at2 === 0) {
         at2 = '';

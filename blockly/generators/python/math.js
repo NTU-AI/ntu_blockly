@@ -67,7 +67,7 @@ Python['math_single'] = function(block) {
     code = Python.valueToCode(block, 'NUM', Python.ORDER_UNARY_SIGN) || '0';
     return ['-' + code, Python.ORDER_UNARY_SIGN];
   }
-  Python.definitions_['import_math'] = 'import math';
+  // Python.definitions_['import_math'] = 'import math';
   if (operator === 'SIN' || operator === 'COS' || operator === 'TAN') {
     arg = Python.valueToCode(block, 'NUM', Python.ORDER_MULTIPLICATIVE) || '0';
   } else {
@@ -146,7 +146,7 @@ Python['math_constant'] = function(block) {
   };
   const constant = block.getFieldValue('CONSTANT');
   if (constant !== 'INFINITY') {
-    Python.definitions_['import_math'] = 'import math';
+    // Python.definitions_['import_math'] = 'import math';
   }
   return CONSTANTS[constant];
 };
@@ -172,9 +172,9 @@ Python['math_number_property'] = function(block) {
   let code;
   if (dropdownProperty === 'PRIME') {
     // Prime is a special case as it is not a one-liner test.
-    Python.definitions_['import_math'] = 'import math';
-    Python.definitions_['from_numbers_import_Number'] =
-        'from numbers import Number';
+    // Python.definitions_['import_math'] = 'import math';
+    // Python.definitions_['from_numbers_import_Number'] =
+    //     'from numbers import Number';
     const functionName = Python.provideFunction_('math_isPrime', `
 def ${Python.FUNCTION_NAME_PLACEHOLDER_}(n):
   # https://en.wikipedia.org/wiki/Primality_test#Naive_methods
@@ -212,8 +212,8 @@ def ${Python.FUNCTION_NAME_PLACEHOLDER_}(n):
 
 Python['math_change'] = function(block) {
   // Add to a variable in place.
-  Python.definitions_['from_numbers_import_Number'] =
-      'from numbers import Number';
+  // Python.definitions_['from_numbers_import_Number'] =
+  //     'from numbers import Number';
   const argument0 =
       Python.valueToCode(block, 'DELTA', Python.ORDER_ADDITIVE) || '0';
   const varName =
@@ -243,8 +243,8 @@ Python['math_on_list'] = function(block) {
       code = 'max(' + list + ')';
       break;
     case 'AVERAGE': {
-      Python.definitions_['from_numbers_import_Number'] =
-          'from numbers import Number';
+      // Python.definitions_['from_numbers_import_Number'] =
+      //     'from numbers import Number';
       // This operation excludes null and values that aren't int or float:
       // math_mean([null, null, "aString", 1, 9]) -> 5.0
       const functionName = Python.provideFunction_('math_mean', `
@@ -257,8 +257,8 @@ def ${Python.FUNCTION_NAME_PLACEHOLDER_}(myList):
       break;
     }
     case 'MEDIAN': {
-      Python.definitions_['from_numbers_import_Number'] =
-          'from numbers import Number';
+      // Python.definitions_['from_numbers_import_Number'] =
+      //     'from numbers import Number';
       // This operation excludes null values:
       // math_median([null, null, 1, 3]) -> 2.0
       const functionName = Python.provideFunction_( 'math_median', `
@@ -302,7 +302,7 @@ def ${Python.FUNCTION_NAME_PLACEHOLDER_}(some_list):
       break;
     }
     case 'STD_DEV': {
-      Python.definitions_['import_math'] = 'import math';
+      // Python.definitions_['import_math'] = 'import math';
       const functionName = Python.provideFunction_('math_standard_deviation', `
 def ${Python.FUNCTION_NAME_PLACEHOLDER_}(numbers):
   n = len(numbers)
@@ -315,7 +315,7 @@ def ${Python.FUNCTION_NAME_PLACEHOLDER_}(numbers):
       break;
     }
     case 'RANDOM':
-      Python.definitions_['import_random'] = 'import random';
+      // Python.definitions_['import_random'] = 'import random';
       code = 'random.choice(' + list + ')';
       break;
     default:
@@ -348,7 +348,7 @@ Python['math_constrain'] = function(block) {
 
 Python['math_random_int'] = function(block) {
   // Random integer between [X] and [Y].
-  Python.definitions_['import_random'] = 'import random';
+  // Python.definitions_['import_random'] = 'import random';
   const argument0 = Python.valueToCode(block, 'FROM', Python.ORDER_NONE) || '0';
   const argument1 = Python.valueToCode(block, 'TO', Python.ORDER_NONE) || '0';
   const code = 'random.randint(' + argument0 + ', ' + argument1 + ')';
@@ -357,13 +357,13 @@ Python['math_random_int'] = function(block) {
 
 Python['math_random_float'] = function(block) {
   // Random fraction between 0 and 1.
-  Python.definitions_['import_random'] = 'import random';
+  // Python.definitions_['import_random'] = 'import random';
   return ['random.random()', Python.ORDER_FUNCTION_CALL];
 };
 
 Python['math_atan2'] = function(block) {
   // Arctangent of point (X, Y) in degrees from -180 to 180.
-  Python.definitions_['import_math'] = 'import math';
+  // Python.definitions_['import_math'] = 'import math';
   const argument0 = Python.valueToCode(block, 'X', Python.ORDER_NONE) || '0';
   const argument1 = Python.valueToCode(block, 'Y', Python.ORDER_NONE) || '0';
   return [
