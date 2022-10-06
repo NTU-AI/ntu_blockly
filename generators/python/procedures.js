@@ -140,25 +140,29 @@ Python['procedures_ifreturn'] = function(block) {
 
 Python["procedures_setup"] = function (block) {
   let branch = Python.statementToCode(block, "DO") || Python.PASS;
-  let return_value = Python.valueToCode(
-    block,
-    "RETURN",
-    Python.ORDER_NONE
-  );
+  // let return_value = Python.valueToCode(
+  //   block,
+  //   "RETURN",
+  //   Python.ORDER_NONE
+  // );
+  // const code =
+  //   "def setup(self):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
   const code =
-    "def setup(self):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
+    "def setup(self):\n" + branch + "\n";
   return code;
 };
 
 Python["procedures_setup_supervisor"] = function (block) {
   let branch = Python.statementToCode(block, "DO") || Python.PASS;
-  let return_value = Python.valueToCode(
-    block,
-    "RETURN",
-    Python.ORDER_NONE
-  );
+  // let return_value = Python.valueToCode(
+  //   block,
+  //   "RETURN",
+  //   Python.ORDER_NONE
+  // );
+  // const code =
+  //   "def setup(self, actors):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
   const code =
-    "def setup(self, actors):\n" + branch + "  return self.defineActor(" + return_value + ")\n";
+    "def setup(self, actors):\n" + branch + "\n";
   return code;
 };
 
