@@ -316,6 +316,8 @@ const createVariableButtonHandler = function(
         } else {
           // No conflict
           workspace.createVariable(text, type);
+          console.log("no conlict")
+          console.log(VariableModel.allUsedVarModels)
           if (opt_callback) {
             opt_callback(text);
           }
