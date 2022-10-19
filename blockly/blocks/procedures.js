@@ -492,7 +492,7 @@ blocks['procedures_setup'] = {
   init: function () {
     this.appendDummyInput().appendField("Setup");
     this.appendStatementInput("DO").setCheck(null);
-    //this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
+    // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
     // this.setTooltip("Block that contains the blocks related to the setup of the program.");
     this.setTooltip(Msg['PROCEDURES_SETUP_TOOLTIP']);
     this.setHelpUrl("");
@@ -504,7 +504,7 @@ blocks['procedures_setup_supervisor'] = {
   init: function () {
     this.appendDummyInput().appendField("Setup Supervisor");
     this.appendStatementInput("DO").setCheck(null);
-    //this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
+    // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
     // this.setTooltip("Block that contains the blocks related to the setup of the supervisor.");
     this.setTooltip(Msg['PROCEDURES_SETUP_SUPERVISOR_TOOLTIP']);
     this.setHelpUrl("");
