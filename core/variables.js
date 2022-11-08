@@ -197,14 +197,14 @@ const flyoutCategoryBlocks = function(workspace) {
       const block = utilsXml.createElement('block');
       block.setAttribute('type', 'variables_call');
       block.setAttribute('gap', Blocks['variables_call_out'] ? 8 : 24);
-      block.appendChild(generateVariableFieldDom(mostRecentVariable));
+      block.appendChild(generateVariableFieldDom(variableModelList[0]));
       xmlList.push(block);
     }
     
     if (Blocks['variables_call_out']) {
       const block = utilsXml.createElement('block');
       block.setAttribute('type', 'variables_call_out');
-      block.appendChild(generateVariableFieldDom(mostRecentVariable));
+      block.appendChild(generateVariableFieldDom(variableModelList[0]));
       xmlList.push(block);
     }
   }

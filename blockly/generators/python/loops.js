@@ -42,7 +42,7 @@ Python['controls_repeat_ext'] = function(block) {
   //   code = 'for ' + loopVar + ' in range(' + repeats + ')):\n  if('+initialArg+'):' + branch;
   // }
   // else{
-    code = 'for ' + loopVar + ' in range(' + repeats + '):\n' + branch;
+    code = 'for self.' + loopVar + ' in range(' + repeats + '):\n' + branch;
   //}
 
   return code;
@@ -178,7 +178,7 @@ def ${Python.FUNCTION_NAME_PLACEHOLDER_}(start, stop, step):
       range = generateUpDownRange(startVar, endVar, incVar);
     }
   }
-  code += 'for ' + variable0 + ' in ' + range + ':\n' + branch;
+  code += 'for self.' + variable0 + ' in ' + range + ':\n' + branch;
   return code;
 };
 
@@ -190,7 +190,7 @@ Python['controls_forEach'] = function(block) {
       Python.valueToCode(block, 'LIST', Python.ORDER_RELATIONAL) || '[]';
   let branch = Python.statementToCode(block, 'DO');
   branch = Python.addLoopTrap(branch, block) || Python.PASS;
-  const code = 'for ' + variable0 + ' in ' + argument0 + ':\n' + branch;
+  const code = 'for self.' + variable0 + ' in ' + argument0 + ':\n' + branch;
   return code;
 };
 
