@@ -167,6 +167,7 @@ class VariableMap {
    * @return {!VariableModel} The newly created variable.
    */
   createVariable(name, opt_type, opt_id) {
+    console.log("core/variable_map")
     let variable = this.getVariable(name, opt_type);
     if (variable) {
       if (opt_id && variable.getId() !== opt_id) {
