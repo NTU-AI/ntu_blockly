@@ -239,7 +239,7 @@ Python['text_trim'] = function(block) {
 Python['text_print'] = function(block) {
   // Print statement.
   const msg = Python.valueToCode(block, 'TEXT', Python.ORDER_NONE) || "''";
-  return 'print(' + msg + ')\n';
+  return 'print(' + msg + ')\ntime.sleep(0.05)\n';
 };
 
 Python['text_prompt_ext'] = function(block) {
