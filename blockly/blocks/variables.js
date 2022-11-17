@@ -74,7 +74,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
   },
   {
     'type': 'variables_call',
-    'message0': 'call %1 %2',
+    'message0': '%{BKY_CALL_TEXT} %1 %2',
     'args0': [
       {
         'type': 'field_variable',
@@ -95,7 +95,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
   },
   {
     'type': 'variables_call_out',
-    'message0': 'return %1 %2',
+    'message0': '%{BKY_RETURN_TEXT} %1 %2',
     'args0': [
       {
         'type': 'field_variable',
