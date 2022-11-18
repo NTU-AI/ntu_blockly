@@ -439,6 +439,10 @@ declare namespace Blockly.Msg {
   let VARIABLES_SET_CREATE_GET : string ;
   let VARIABLES_SET_HELPURL : string ;
   let VARIABLES_SET_TOOLTIP : string ;
+  let CALL_TEXT : string ;
+  let VARIABLES_CALL_TOOLTIP : string ;
+  let RETURN_TEXT: string ;
+  let VARIABLES_CALL_OUT_TOOLTIP : string ;
   let VARIABLE_ALREADY_EXISTS : string ;
   let VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE : string ;
   let WORKSPACE_ARIA_LABEL : string ;

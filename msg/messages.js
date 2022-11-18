@@ -1454,16 +1454,25 @@ Blockly.Msg.VARIABLES_SET_TOOLTIP = 'Sets this variable to be equal to the input
 /// tooltip - This initializes or changes the value of the named variable.
 Blockly.Msg.VARIABLES_CALL_TOOLTIP = 'Calls a method from current variable.';
 /** @type {string} */
+<<<<<<< HEAD
 Blockly.Msg.CALL_TEXT = "call";
+=======
+Blockly.Msg.CALL_TEXT = "call"
+>>>>>>> 1f42ca97e636dfd18573226a68216caffdb9a60d
 /** @type {string} */
 /// tooltip - This initializes or changes the value of the named variable.
 Blockly.Msg.VARIABLES_CALL_OUT_TOOLTIP = 'Returns the value of a method from current variable.';
 /** @type {string} */
+<<<<<<< HEAD
 Blockly.Msg.RETURN_TEXT = "return";
+=======
+Blockly.Msg.RETURN_TEXT = "return"
+>>>>>>> 1f42ca97e636dfd18573226a68216caffdb9a60d
 /** @type {string} */
 /// context menu - Selecting this creates a block to get (change) the value of
 /// this variable.\n\nParameters:\n* %1 - the name of the variable.
 Blockly.Msg.VARIABLES_SET_CREATE_GET = 'Create "get %1"';
+
 
 // Procedures Blocks.
 /** @type {string} */
