@@ -494,7 +494,8 @@ blocks['procedures_setup'] = {
     this.appendStatementInput("DO").setCheck(null);
     // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
     // this.setTooltip("Block that contains the blocks related to the setup of the program.");
-    this.setTooltip(Msg['PROCEDURES_SETUP_TOOLTIP']);
+    //this.setTooltip(Msg['PROCEDURES_SETUP_TOOLTIP']);
+    this.setTooltip("Bloco que contem os blocos de inicialização do programa.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
@@ -506,7 +507,8 @@ blocks['procedures_setup_supervisor'] = {
     this.appendStatementInput("DO").setCheck(null);
     // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
     // this.setTooltip("Block that contains the blocks related to the setup of the supervisor.");
-    this.setTooltip(Msg['PROCEDURES_SETUP_SUPERVISOR_TOOLTIP']);
+    //this.setTooltip(Msg['PROCEDURES_SETUP_SUPERVISOR_TOOLTIP']);
+    this.setTooltip("Bloco que contem os blocos de inicialização do supervisório.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
@@ -517,7 +519,8 @@ blocks['procedures_run'] = {
     this.appendDummyInput().appendField("Run");
     this.appendStatementInput("DO").setCheck(null);
     //this.setTooltip("Block that contains the blocks related to the execution of the program.");
-    this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
+    //this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
+    this.setTooltip("Bloco que contem os blocos de execução do programa.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
