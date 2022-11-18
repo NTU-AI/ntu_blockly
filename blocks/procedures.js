@@ -516,8 +516,8 @@ blocks['procedures_run'] = {
   init: function () {
     this.appendDummyInput().appendField("Run");
     this.appendStatementInput("DO").setCheck(null);
-    this.setTooltip("Block that contains the blocks related to the execution of the program.");
-    // this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
+    //this.setTooltip("Block that contains the blocks related to the execution of the program.");
+    this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
