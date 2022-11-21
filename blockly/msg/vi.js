@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Thêm Chú Giải";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Không thể xóa giá trị '%1' vì nó được bao gồm trong định nghĩa của chức năng '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Thay giá trị thành:";
 Blockly.Msg["CLEAN_UP"] = "Sắp xếp lại các khối";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "biến:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Thêm một đầu vào cho hàm.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "các tham số";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Thêm, xóa hoặc sắp xếp lại các đầu vào cho hàm này.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Làm lại";
 Blockly.Msg["REMOVE_COMMENT"] = "Xóa Chú Giải";
 Blockly.Msg["RENAME_VARIABLE"] = "Thay tên biến...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Thay tên tất cả các biến \"%1\" thành:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "ở cuối %1 thêm văn bản %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Thêm một mảng văn bản vào biến \"%1\".";

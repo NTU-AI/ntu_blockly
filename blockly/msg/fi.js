@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Lisää kommentti";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Ei voida poistaa muuttujaa '%1' koska se on osa funktion määritelmää '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Muuta arvoa:";
 Blockly.Msg["CLEAN_UP"] = "Siivoa lohkot";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "syötteen nimi:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Lisää sisääntulon funktioon.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "syötteet";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Lisää, poista tai järjestele uudelleen tämän toiminnon tulot.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Tee uudelleen";
 Blockly.Msg["REMOVE_COMMENT"] = "Poista kommentti";
 Blockly.Msg["RENAME_VARIABLE"] = "Nimeä uudelleen muuttuja...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Nimeä uudelleen kaikki '%1' muuttujaa:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "muuttujaan %1 lisää teksti %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Lisää tekstiä muuttujaan '%1'.";

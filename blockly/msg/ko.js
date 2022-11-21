@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "주석 추가";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "'%2' 함수 정의의 일부이기 때문에 '%1' 변수를 삭제할 수 없습니다";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "값 바꾸기:";
 Blockly.Msg["CLEAN_UP"] = "블록 정리";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "매개 변수:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "함수에 값을 더합니다.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "매개 변수들";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "이 함수를 추가, 삭제, 혹은 재정렬합니다.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "다시 실행";
 Blockly.Msg["REMOVE_COMMENT"] = "주석 제거";
 Blockly.Msg["RENAME_VARIABLE"] = "변수 이름 바꾸기:";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "'%1' 변수 이름을 바꾸기:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";
 Blockly.Msg["TEXT_APPEND_TITLE"] = "다음 %1 내용 덧붙이기 %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "'%1' 변수의 끝에 일부 텍스트를 덧붙입니다.";

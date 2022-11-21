@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Tilføj Kommentar";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Kan ikke slette variablen »%1« da den er en del af definitionen af funktionen »%2«";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Skift værdi:";
 Blockly.Msg["CLEAN_UP"] = "Ryd op i blokke";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "parameternavn:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Tilføj en parameter til funktionen.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "parametre";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Tilføje, fjerne eller ændre rækkefølgen af parametre til denne funktion.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Omgør";
 Blockly.Msg["REMOVE_COMMENT"] = "Fjern Kommentar";
 Blockly.Msg["RENAME_VARIABLE"] = "Omdøb variabel...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Omdøb alle '%1' variabler til:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "til %1 tilføj tekst %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Tilføj noget tekst til variablen '%1'.";

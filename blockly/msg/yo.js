@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Ṣe afikun ọrọ iwoye";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "E ko lee paa Oniruuru rẹ ' %1' nitori wipe o je ara itumọ isise eto yi '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Ṣe ayipada iye:";
 Blockly.Msg["CLEAN_UP"] = "Nu Bulọọku kuro";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "igbewọle orukọ:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Ṣe afikun kan sii igbewọle si iṣẹ yii.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "igbewọle";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Fikun, yọ kuro, tabi tun beere awọn igbewọle si iṣẹ yii.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Tun ṣe";
 Blockly.Msg["REMOVE_COMMENT"] = "Yọ afikun ọrọ iwoye";
 Blockly.Msg["RENAME_VARIABLE"] = "Tun orukọ oniruuru kọ...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Tun orukọ gbogbo '%1' v oniruru kọ si:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "si %1 fikun ọrọ %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Ṣe afikun awon ọrọ oniruru '%1'.";

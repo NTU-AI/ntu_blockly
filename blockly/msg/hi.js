@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "टिप्पणी छोड़ें";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "चर '%1' को नहीं हटा सकता क्योंकि यह फ़ंक्शन '%2' की परिभाषा का हिस्सा है";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "मान परिवर्तित करें:";
 Blockly.Msg["CLEAN_UP"] = "खानों को साफ करें";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "इनपुट का नाम:"
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "फंगक्शन को इनपुट प्रदान करें।";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "इनपुट";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "इस फ़ंक्शन में इनपुट जोड़ें, निकालें, या पुन: क्रमित करें।";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "फिर से करें";
 Blockly.Msg["REMOVE_COMMENT"] = "टिप्पणी हटायें";
 Blockly.Msg["RENAME_VARIABLE"] = "चर का नाम बदलें...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "सभी '%1' चरों के नाम बदलें:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "%1 में पाठ %2 को जोड़ें";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "कुछ टेक्स्ट इस चर '%1' से जोड़ें।";

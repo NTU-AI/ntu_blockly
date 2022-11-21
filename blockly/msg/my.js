@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "မှတ်ချက် ပေါင်းထည့်ရန်";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "လုပ်ဆောင်ချက် \"%2%\" ၏ သတ်မှတ်ချက်တစ်စိတ်တစ်ပိုင်း ဖြစ်သောကြောင့် ကိန်းရှင် \"%1\" ကို ဖျက်လို့မရပါ။";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "တန်ဖိုး ပြောင်းလဲရန်:";
 Blockly.Msg["CLEAN_UP"] = "Clean up Blocks";  // untranslated
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "input name:";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Add an input to the function.";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inputs";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Add, remove, or reorder inputs to this function.";  // untranslated
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "ရှေ့သို့ ပြန်ပြင်ရန်";
 Blockly.Msg["REMOVE_COMMENT"] = "မှတ်ချက် ဖယ်ရှားရန်";
 Blockly.Msg["RENAME_VARIABLE"] = "ကိန်းရှင် အမည်ပြောင်းရန်";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "ကိန်းရှင် %1 ခုကို အမည်ပြောင်းရန်";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Append some text to variable '%1'.";  // untranslated

@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Skrifa skýringu";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Can't delete the variable '%1' because it's part of the definition of the function '%2'";  // untranslated
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Breyta gildi:";
 Blockly.Msg["CLEAN_UP"] = "Hreinsa kubba";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "heiti inntaks:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Bæta inntaki við fallið.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inntök";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Bæta við, fjarlægja eða umraða inntökum fyrir þetta fall.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Endurtaka";
 Blockly.Msg["REMOVE_COMMENT"] = "Fjarlægja skýringu";
 Blockly.Msg["RENAME_VARIABLE"] = "Endurnefna breytu...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Endurnefna allar '%1' breyturnar:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";
 Blockly.Msg["TEXT_APPEND_TITLE"] = "við %1 bæta texta %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Bæta texta við breytuna '%1'.";

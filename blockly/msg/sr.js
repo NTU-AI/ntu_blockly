@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Додај коментар";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Није могуће избрисати променљиву „%1” јер је део дефиниције функције „%2”";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Промена вредности:";
 Blockly.Msg["CLEAN_UP"] = "Очисти блокове";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "име параметра:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Додајте улазни параметар финкцији.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "улази";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Додајте, уклоните или преуредите уносе за ову функцију.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Понови";
 Blockly.Msg["REMOVE_COMMENT"] = "Уклони коментар";
 Blockly.Msg["RENAME_VARIABLE"] = "Преименуј променљиву…";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Преименуј све ’%1’ променљиве у:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "на %1 додај текст %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Додаје текст променљивој „%1”.";

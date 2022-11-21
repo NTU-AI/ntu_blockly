@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "コメントを追加";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "変数 '%1' は関数 '%2' の定義の一部であるため、削除できません";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "値を変える：";
 Blockly.Msg["CLEAN_UP"] = "ブロックを整理する";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "入力名:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "関数への入力の追加。";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "入力";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "この関数への入力の追加、削除、順番変更。";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "やり直す";
 Blockly.Msg["REMOVE_COMMENT"] = "コメントを削除";
 Blockly.Msg["RENAME_VARIABLE"] = "変数の名前を変える…";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "選択した%1個すべての変数の名前を変える：";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";
 Blockly.Msg["TEXT_APPEND_TITLE"] = "項目 %1 へテキストを追加 %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "変数 '%1' にテキストを追加。";

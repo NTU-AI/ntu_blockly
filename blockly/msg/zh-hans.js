@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "添加注释";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "不能删除变量“%1”，因为它是函数“%2”定义的一部分";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "更改值：";
 Blockly.Msg["CLEAN_UP"] = "整理块";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "输入名称：";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "添加函数输入。";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "输入";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "添加、移除或重新排此函数的输入。";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "重做";
 Blockly.Msg["REMOVE_COMMENT"] = "删除注释";
 Blockly.Msg["RENAME_VARIABLE"] = "重命名变量...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "将所有“%1”变量重命名为:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "在%1之后加上文本%2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "将一些文本追加到变量“%1”里。";

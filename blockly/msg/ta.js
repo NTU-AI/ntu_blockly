@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "கருத்தை சேர்";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Can't delete the variable '%1' because it's part of the definition of the function '%2'";  // untranslated
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "மதிப்பை மாற்றவும்:";
 Blockly.Msg["CLEAN_UP"] = "Clean up Blocks";  // untranslated
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "பெயரை உள்ளிட
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "செயல்கூறுக்கு ஒரு உள்ளீட்டை சேர்.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "உள்ளீடுகள்";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "செயல்கூறுகளின் உள்ளீட்டை சேர், நீக்கு, or மீண்டும் வரிசை செய்.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "மீண்டும் செய்";
 Blockly.Msg["REMOVE_COMMENT"] = "கருத்தை நீக்கு";
 Blockly.Msg["RENAME_VARIABLE"] = "மாறிலியை மறுபெயரிடுக...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "அனைத்து '%1' மாறிலிகளையும் பின்வருமாறு மறுபெயரிடுக:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "இந்த மாறியிற்கு %1 உரை சேர்க்க %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "'%1' மாறியில் உரையை சேர்";

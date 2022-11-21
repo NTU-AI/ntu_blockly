@@ -18,6 +18,7 @@
 var Blockly = Blockly || { Msg: Object.create(null) };
 
 Blockly.Msg["ADD_COMMENT"] = "Gionté un coment";
+Blockly.Msg["CALL_TEXT"] = "call";  // untranslated
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "As peul nen eliminesse la variàbil '%1' përchè a l'é part ëd la definission dla fonsion '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Modifiché ël valor:";
 Blockly.Msg["CLEAN_UP"] = "Dëscancelé ij blòch";
@@ -319,13 +320,16 @@ Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nòm ëd l'imission:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Gionté n'imission a la fonsion.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "imission";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Gionté, gavé o riordiné j'imission ëd sa fonsion.";
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
 Blockly.Msg["REDO"] = "Fé torna";
 Blockly.Msg["REMOVE_COMMENT"] = "Scancelé un coment";
 Blockly.Msg["RENAME_VARIABLE"] = "Arnomé la variàbil...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Arnomé tute le variàbij '%1' 'me:";
+Blockly.Msg["RETURN_TEXT"] = "return";  // untranslated
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg["TEXT_APPEND_TITLE"] = "a %1 taché ël test %2";
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Taché dël test a la variàbil '%1'.";
