@@ -322,6 +322,7 @@ Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "entradas";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Adiciona, remove, ou reordena as entradas para esta função.";
 Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Execução";
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Bloco que contem os blocos de execução do programa.";
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Setup do Supervisório";
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Bloco que contem os blocos de inicialização do supervisório.";
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Bloco que contem os blocos de inicialização do programa.";

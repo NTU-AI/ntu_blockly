@@ -403,5 +403,6 @@
 	"PROCEDURES_SETUP_SUPERVISOR_TOOLTIP": "Block that contains the blocks related to the setup of the supervisor.",
 	"PROCEDURES_RUN_TOOLTIP": "Block that contains the blocks related to the execution of the program.",
 	"PROCEDURES_SETUP_TITLE": "Setup", 
+	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Supervisor Setup", 
 	"PROCEDURES_RUN_TITLE": "Run"  
 }

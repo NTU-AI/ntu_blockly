@@ -322,6 +322,7 @@ Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "உள்ளீடுகள�
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "செயல்கூறுகளின் உள்ளீட்டை சேர், நீக்கு, or மீண்டும் வரிசை செய்.";
 Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Supervisor Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated

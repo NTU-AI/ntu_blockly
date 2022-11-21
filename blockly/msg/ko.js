@@ -322,6 +322,7 @@ Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "매개 변수들";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "이 함수를 추가, 삭제, 혹은 재정렬합니다.";
 Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Supervisor Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated

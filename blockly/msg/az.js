@@ -322,6 +322,7 @@ Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "girişlər";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Bu funksiyanın giriş parametrləri üçün əlavə et, sil, və ya yenilə.";
 Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  // untranslated
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks related to the execution of the program.";  // untranslated
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Supervisor Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Block that contains the blocks related to the setup of the supervisor.";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";  // untranslated
 Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Block that contains the blocks related to the setup of the program.";  // untranslated
