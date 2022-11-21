@@ -1451,16 +1451,6 @@ Blockly.Msg.VARIABLES_SET = 'set %1 to %2';
 /// tooltip - This initializes or changes the value of the named variable.
 Blockly.Msg.VARIABLES_SET_TOOLTIP = 'Sets this variable to be equal to the input.';
 /** @type {string} */
-/// tooltip - This initializes or changes the value of the named variable.
-Blockly.Msg.VARIABLES_CALL_TOOLTIP = 'Calls a method from current variable.';
-/** @type {string} */
-Blockly.Msg.CALL_TEXT = "call";
-/** @type {string} */
-/// tooltip - This initializes or changes the value of the named variable.
-Blockly.Msg.VARIABLES_CALL_OUT_TOOLTIP = 'Returns the value of a method from current variable.';
-/** @type {string} */
-Blockly.Msg.RETURN_TEXT = "return";
-/** @type {string} */
 /// context menu - Selecting this creates a block to get (change) the value of
 /// this variable.\n\nParameters:\n* %1 - the name of the variable.
 Blockly.Msg.VARIABLES_SET_CREATE_GET = 'Create "get %1"';
@@ -1530,18 +1520,6 @@ Blockly.Msg.PROCEDURES_ALLOW_STATEMENTS = 'allow statements';
 /** @type {string} */
 /// alert - The user has created a function with two parameters that have the same name.  Every parameter must have a different name.
 Blockly.Msg.PROCEDURES_DEF_DUPLICATE_WARNING = 'Warning: This function has duplicate parameters.';
-
-/** @type {string} */
-/// tooltip - This is the block that implements the setup of the code
-Blockly.Msg.PROCEDURES_SETUP_TOOLTIP = 'Block that contains the blocks related to the setup of the program.';
-
-/** @type {string} */
-/// tooltip - This is the block that implements the setup of the supervisor code
-Blockly.Msg.PROCEDURES_SETUP_SUPERVISOR_TOOLTIP = 'Block that contains the blocks related to the setup of the supervisor.';
-
-/** @type {string} */
-/// tooltip - This is the block that implements the execution of the code
-Blockly.Msg.PROCEDURES_RUN_TOOLTIP = 'Block that contains the blocks related to the execution of the program.';
 
 /** @type {string} */
 /// {{Optional}} url - Information about calling [https://en.wikipedia.org/wiki/Subroutine functions] that do not return values.
@@ -1620,3 +1598,35 @@ Blockly.Msg.DIALOG_OK = 'OK';
 /** @type {string} */
 /// button label - Pressing this button cancels a proposed action.\n{{Identical|Cancel}}
 Blockly.Msg.DIALOG_CANCEL = 'Cancel';
+
+
+/** @type {string} */
+/// tooltip - This initializes or changes the value of the named variable.
+Blockly.Msg.VARIABLES_CALL_TOOLTIP = 'Calls a method from current variable.';
+/** @type {string} */
+/// tooltip - This initializes or changes the value of the named variable.
+Blockly.Msg.VARIABLES_CALL_OUT_TOOLTIP = 'Returns the value of a method from current variable.';
+/** @type {string} */
+Blockly.Msg.CALL_TEXT = "call";
+/** @type {string} */
+Blockly.Msg.RETURN_TEXT = "return";
+/** @type {string} */
+/// tooltip - This is the block that implements the setup of the code
+Blockly.Msg.PROCEDURES_SETUP_TOOLTIP = 'Block that contains the blocks related to the setup of the program.';
+
+/** @type {string} */
+/// tooltip - This is the block that implements the setup of the supervisor code
+Blockly.Msg.PROCEDURES_SETUP_SUPERVISOR_TOOLTIP = 'Block that contains the blocks related to the setup of the supervisor.';
+
+/** @type {string} */
+/// tooltip - This is the block that implements the execution of the code
+Blockly.Msg.PROCEDURES_RUN_TOOLTIP = 'Block that contains the blocks related to the execution of the program.';
+
+/** @type {string} */
+Blockly.Msg.PROCEDURES_SETUP_TITLE = "Setup";
+
+/** @type {string} */
+Blockly.Msg.PROCEDURES_SETUP_SUPERVISOR_TITLE = "Supervisor Setup"; 
+
+/** @type {string} */
+Blockly.Msg.PROCEDURES_RUN_TITLE = "Run";

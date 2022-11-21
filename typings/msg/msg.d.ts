@@ -339,9 +339,6 @@ declare namespace Blockly.Msg {
   let PROCEDURES_DEFRETURN_TITLE : string ;
   let PROCEDURES_DEFRETURN_TOOLTIP : string ;
   let PROCEDURES_DEF_DUPLICATE_WARNING : string ;
-  let PROCEDURES_SETUP_TOOLTIP : string;
-  let PROCEDURES_SETUP_SUPERVISOR_TOOLTIP : string;
-  let PROCEDURES_RUN_TOOLTIP : string;
   let PROCEDURES_HIGHLIGHT_DEF : string ;
   let PROCEDURES_HUE : string ;
   let PROCEDURES_IFRETURN_HELPURL : string ;
@@ -439,15 +436,20 @@ declare namespace Blockly.Msg {
   let VARIABLES_SET_CREATE_GET : string ;
   let VARIABLES_SET_HELPURL : string ;
   let VARIABLES_SET_TOOLTIP : string ;
-  let CALL_TEXT : string ;
-  let VARIABLES_CALL_TOOLTIP : string ;
-  let RETURN_TEXT: string ;
-  let VARIABLES_CALL_OUT_TOOLTIP : string ;
   let VARIABLE_ALREADY_EXISTS : string ;
   let VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE : string ;
   let WORKSPACE_ARIA_LABEL : string ;
   let WORKSPACE_COMMENT_DEFAULT_TEXT : string ;
+  
+  let VARIABLES_CALL_TOOLTIP : string ;
+  let VARIABLES_CALL_OUT_TOOLTIP : string ;
   let CALL_TEXT: string;
   let RETURN_TEXT: string;
+  let PROCEDURES_SETUP_TOOLTIP : string;
+  let PROCEDURES_SETUP_SUPERVISOR_TOOLTIP : string;
+  let PROCEDURES_RUN_TOOLTIP : string;
+  let PROCEDURES_SETUP_TITLE: string;
+  let PROCEDURES_SETUP_SUPERVISOR_TITLE: string;
+  let PROCEDURES_RUN_TITLE: string;
 }
 
