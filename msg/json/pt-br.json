@@ -385,7 +385,7 @@
 	"PROCEDURES_SETUP_SUPERVISOR_TOOLTIP": "Bloco que contem os blocos de inicialização do supervisório.", 
 	"PROCEDURES_SETUP_TOOLTIP": "Bloco que contem os blocos de inicialização do programa.",
 	"PROCEDURES_RUN_TOOLTIP": "Bloco que contem os blocos de execução do programa.",
-	"PROCEDURES_SETUP_TITLE": "Setup", 
-	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Setup do Supervisório", 
+	"PROCEDURES_SETUP_TITLE": "Inicialização", 
+	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Inicialização do Supervisório", 
 	"PROCEDURES_RUN_TITLE": "Execução"  
 }
