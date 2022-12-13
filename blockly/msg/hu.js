@@ -316,7 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Függvénydefiníció kiemelése";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ha az érték igaz, akkor visszatér a függvény értékével.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Figyelem: Ez a blokk csak függvénydefiníción belül használható.";
-Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Main functions";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "változó:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Bemenet hozzáadása a függvényhez.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "paraméterek";
@@ -409,6 +409,7 @@ Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "változó";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Készíts \"%1=\"";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "A változó értékét adja eredményül.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["VARIABLES_SET"] = "%1 %2";
 Blockly.Msg["VARIABLES_SET_CREATE_GET"] = "Készíts \"%1\"";
 Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#set";  // untranslated

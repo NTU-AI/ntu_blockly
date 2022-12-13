@@ -316,7 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Вылучыць вызначэнне
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Калі першае значэнне ісцінае, вяртае другое значэнне.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Папярэджанне: гэты блок можа выкарыстоўвацца толькі ўнутры вызначэння функцыі.";
-Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Main functions";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "імя параметра:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Дадаць уваходны параметр ў функцыю.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "параметры";
@@ -409,6 +409,7 @@ Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "элемент";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Стварыць блок \"прысабечыць\" для %1";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Вяртае значэнне гэтай пераменнай.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["VARIABLES_SET"] = "прысабечыць %1 = %2";
 Blockly.Msg["VARIABLES_SET_CREATE_GET"] = "Стварыць устаўку %1";
 Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#set";  // untranslated

@@ -316,7 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Highlight function definition";  // u
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Актәи аҵакы иашазар, иҳанаҭоит аҩбатәи аҵакы.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Агәаҽанҵара: Ари аблок ахархәара ауеит афункциа аԥҵара аҟны.";
-Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Main functions";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "апараметр ахьӡ:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Add an input to the function.";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "апараметрқәа";
@@ -409,6 +409,7 @@ Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "аелемент";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Иаԥҵатәуп аблок \"иаҭатәуп %1\" азы";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Иҳанаҭоит аҽеиҭак аҵакы.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["VARIABLES_SET"] = "иаҭатәуп %1 = %2";
 Blockly.Msg["VARIABLES_SET_CREATE_GET"] = "Create 'get %1'";  // untranslated
 Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#set";  // untranslated

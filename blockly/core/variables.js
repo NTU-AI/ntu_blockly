@@ -189,7 +189,7 @@ const flyoutCategoryBlocks = function(workspace) {
     }
 
     const text = utilsXml.createElement('label');
-    text.setAttribute('text','Method Calls:');
+    text.setAttribute('text', Msg["VARIABLES_METHODS_CALLS"] + ':');
     text.setAttribute('web-class', 'ioLabel');
     xmlList.push(text);
 
