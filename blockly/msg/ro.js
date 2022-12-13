@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Evidențiază definiția funcției";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Dacă o valoare este adevărată, atunci returnează valoarea a doua.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Avertisment: Acest bloc poate fi utilizat numai în definiția unei funcții.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nume de intrare:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Adaugă un parametru de intrare pentru funcție.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "intrări";

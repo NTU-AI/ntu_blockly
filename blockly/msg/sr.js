@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Истакни дефиницију �
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ако је прва вредност тачна, враћа другу вредност.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Упозорење: Овај блок се може користити једино унутар дефиниције функције.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "име параметра:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Додајте улазни параметар финкцији.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "улази";

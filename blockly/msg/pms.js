@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Sot-ligné la definission dla fonsion
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Se un valor a l'é ver, antlora smon-e un second valor.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Atension: Ës blòch a podria esse dovrà mach an na definission ëd fonsion.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nòm ëd l'imission:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Gionté n'imission a la fonsion.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "imission";

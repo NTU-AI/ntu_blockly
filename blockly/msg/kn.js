@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "ಕಾರ್ಯಘಟಕದ ವ್ಯ
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "ಒಂದು ಮೌಲ್ಯವು ಸತ್ಯವಾಗಿದ್ದರೆ, ಎರಡನೇ ಮೌಲ್ಯವನ್ನು ಹಿಂತಿರುಗಿಸಿ.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "ಎಚ್ಚರಿಕೆ: ಈ ಬ್ಲಾಕ್ ಅನ್ನು ಕಾರ್ಯಘಟಕದ ವ್ಯಾಖ್ಯಾನದಲ್ಲಿ ಮಾತ್ರ ಬಳಸಬಹುದು.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "ಒಳಾoಶದ ಹೆಸರು:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "ಕಾರ್ಯಘಟಕಕ್ಕೆ  ಒಳಾoಶವನ್ನು  ಸೇರಿಸಿ.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ಒಳಾoಶಗಳು";

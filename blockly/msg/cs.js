@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Zvýraznit definici funkce";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Je-li hodnota pravda, pak vrátí druhou hodnotu.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Varování: Tento blok může být použit pouze uvnitř definici funkce.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "vstupní jméno:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Přidat vstupy do funkce.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "vstupy";

@@ -433,4 +433,6 @@ Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Bloco que contem os blocos de inicial
 Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Bloco que contem os blocos de execução do programa.";
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Inicialização";
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Inicialização do Supervisório";   
-Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Execução";  
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Execução";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Chamadas de métodos";
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Funções principais"  

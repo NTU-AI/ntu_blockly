@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Marca sa definitzioni de funtzioni.";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Si unu valori est berus, tandu torrat unu segundu valori.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Amonestu: Custu brocu ddu podis ponni sceti aintru de una funtzioni.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nomini input:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Aciungi un input a sa funtzioni.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inputs";

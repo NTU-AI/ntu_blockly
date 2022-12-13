@@ -434,3 +434,5 @@ Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Block that contains the blocks of the e
 Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Setup";
 Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Supervisor Setup";   
 Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Run";  
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Main functions"  

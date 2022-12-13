@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Surligner la définition de la foncti
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Si une valeur est vraie, alors renvoyer une seconde valeur.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Attention : ce bloc ne peut être utilisé que dans une définition de fonction.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nom de l’entrée :";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Ajouter une entrée à la fonction.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "entrées";

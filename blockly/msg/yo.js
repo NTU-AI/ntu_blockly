@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Ṣafihan iṣẹ isọtunmọ";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ti iye ba jẹ otitọ, lẹhinna da iye keji pada.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Ikilo: Bulọọki yii le ṣee lo nikan laarin itumọ iṣẹ kan";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "igbewọle orukọ:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Ṣe afikun kan sii igbewọle si iṣẹ yii.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "igbewọle";

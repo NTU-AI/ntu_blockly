@@ -451,5 +451,6 @@ declare namespace Blockly.Msg {
   let PROCEDURES_SETUP_TITLE: string;
   let PROCEDURES_SETUP_SUPERVISOR_TITLE: string;
   let PROCEDURES_RUN_TITLE: string;
+  let VARIABLES_METHODS_CALLS: string
 }
 

@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Sorot definisi fungsi";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Jika nilai yang benar, kemudian kembalikan nilai kedua.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Peringatan: Blok ini dapat digunakan hanya dalam definisi fungsi.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "masukan Nama:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Tambahkan masukan ke fungsi.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "input";

@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Izcelt funkcijas definīciju";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ja pirmā vērtība ir \"patiesa\", tad atgriezt otro vērtību.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Brīdinājums: Šo bloku var izmantot tikai funkcijas definīcijā.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "arguments:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Pievienot funkcijai argumentu.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "argumenti";

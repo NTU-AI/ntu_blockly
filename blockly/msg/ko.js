@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "함수 정의 찾기";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "값이 참이라면, 두 번째 값을 반환합니다.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "경고: 이 블럭은, 함수 정의 블럭 안에서만 사용할 수 있습니다.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "매개 변수:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "함수에 값을 더합니다.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "매개 변수들";

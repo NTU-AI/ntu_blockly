@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Выделить определени
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Если первое значение истинно, возвращает второе значение.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Предупреждение: Этот блок может использоваться только внутри определения функции.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "имя параметра:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Добавить входной параметр в функцию.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "параметры";

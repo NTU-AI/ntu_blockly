@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Accentueer functiedefinitie";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Als de eerste waarde \"waar\" is, geef dan de tweede waarde terug.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Waarschuwing: dit blok mag alleen gebruikt worden binnen de definitie van een functie.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "invoernaam:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Een invoer aan de functie toevoegen.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ingangen";

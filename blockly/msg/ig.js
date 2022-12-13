@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Nkọwapụta njirimara ọrụ";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Weghachite akara nke agbanwe a.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Ịdọ aka ná ntị: Ọrụ a nwere ọnụọgụ abụọ.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "tinye aha:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Tinye ntinye aka na ọrụ ahụ.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ntinye";

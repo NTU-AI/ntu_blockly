@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "ক্রিয়ার সংজ্
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "যদি মান সত্য হয় তাহলে দ্বিতীয় মান পাঠাবে।";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Warning: This block may be used only within a function definition.";  // untranslated
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "ইনপুটের নাম:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "ক্রিয়াতে একটি ইনপুট যোগ করুন।";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inputs";  // untranslated

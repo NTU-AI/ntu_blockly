@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Označi blok funkcije";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Če je vrednost resnična, vrne drugo vrednost.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Pozor: Ta blok lahko uporabite samo v bloku funkcije.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "ime vnosa:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Funkciji doda vnos.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "vnosi";

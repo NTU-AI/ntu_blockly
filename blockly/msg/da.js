@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Markér funktionsdefinitionen";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Hvis en værdi er sand, så returnér en anden værdi.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Advarsel: Denne blok kan kun anvendes inden for en funktionsdefinition.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "parameternavn:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Tilføj en parameter til funktionen.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "parametre";

@@ -404,5 +404,7 @@
 	"PROCEDURES_RUN_TOOLTIP": "Block that contains the blocks related to the execution of the program.",
 	"PROCEDURES_SETUP_TITLE": "Setup", 
 	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Supervisor Setup", 
-	"PROCEDURES_RUN_TITLE": "Run"  
+	"PROCEDURES_RUN_TITLE": "Run",
+	"VARIABLES_METHODS_CALLS": "Method calls",
+	"PROCEDURES_MAIN_FUNCS": "Main functions"
 }

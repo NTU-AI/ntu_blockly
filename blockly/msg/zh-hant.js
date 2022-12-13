@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "反白顯示函式定義";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "如果值為 true，則返回第二個值。";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "警告：這個區塊只可以在定義函式時使用。";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "輸入名稱：";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "添加一個輸入區塊到函式。";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "輸入";

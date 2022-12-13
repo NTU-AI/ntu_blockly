@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "برجسته‌سازی تعریف ت
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "اگر یک مقدار صحیح است، مقدار دوم را برگردان.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "اخطار: این بلوک احتمالاً فقط داخل یک تابع استفاده می‌شود.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "نام ورودی:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "اضافه کردن ورودی به تابع.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ورودی‌ها";

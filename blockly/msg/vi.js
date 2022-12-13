@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Làm nổi bật thủ tục";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Khi điều kiện đúng thì hoàn trả một giá trị.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Chú ý: Mảnh này chỉ có thể dùng trong một thủ tục.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "biến:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Thêm một đầu vào cho hàm.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "các tham số";

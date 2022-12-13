@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Bayar da haske na bayanin aiki";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Idan wata kima gaskiya ce, to dawo da kima ta biyu.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Gargaɗi: Za a iya amfani da wannan bulo ne kawai a cikin bayani na wani aiki.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "saka suna:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Daɗa wani bayani ga aikin.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "bayani";

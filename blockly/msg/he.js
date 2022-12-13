@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "הדגש הגדרה של פונקצי
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "אם ערך נכון, אז להחזיר ערך שני.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "אזהרה: קוביה זו עשויה לשמש רק בתוך הגדרה של פונקציה.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "שם הקלט:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "הוסף קלט לפונקציה";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "מקורות קלט";

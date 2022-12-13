@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Tõsta funktsiooni definitsioon esile
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Kui väärtus on tõene, tagastatakse teine väärtus.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Hoiatus: Seda plokki saab kasutada ainult funktsiooni definitsioonis.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "sisend nimega:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Lisab funktsioonile sisendi.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "sisendid";

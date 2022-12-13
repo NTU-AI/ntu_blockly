@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Istakni definiciju funkcije";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ukoliko je vrednost tačna, vrati drugu vrednost.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Upozorenje: Ovaj blok se može koristiti jedino u definiciji funkcije.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "naziv ulaza:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Dodajte ulazna funkcija.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ulazi";

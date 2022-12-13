@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Ընդգծել ֆունկցիայի �
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Եթե արժեքը ճշմարիտ է, վերադարձնում է երկորդ արժեքը:";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Զգուշացում. Այս բլոկը կարող է օգտագործվել միայն ֆունկցիայի սահմանման ներսում:";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "մուտքի անուն՝";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Ֆունկցիային ավելալցնել մուտք (պարամետր)։";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "մուտքեր";

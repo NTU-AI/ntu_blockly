@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "تسليط الضوء على تعري
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "إذا كانت القيمة صحيحة ، اذان قم بارجاع القيمة الثانية.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "تحذير:هذه القطعة تستخدم فقط داخل تعريف دالة.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "اسم الإدخال:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "أضف مدخلا إلى الوظيفة.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "المدخلات";

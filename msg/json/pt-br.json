@@ -387,5 +387,7 @@
 	"PROCEDURES_RUN_TOOLTIP": "Bloco que contem os blocos de execução do programa.",
 	"PROCEDURES_SETUP_TITLE": "Inicialização", 
 	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Inicialização do Supervisório", 
-	"PROCEDURES_RUN_TITLE": "Execução"  
+	"PROCEDURES_RUN_TITLE": "Execução",
+	"VARIABLES_METHODS_CALLS": "Chamadas de métodos",
+	"PROCEDURES_MAIN_FUNCS": "Funções principais"
 }

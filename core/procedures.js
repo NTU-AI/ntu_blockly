@@ -306,7 +306,7 @@ const flyoutCategory = function(workspace) {
   }
 
   const text = utilsXml.createElement('label');
-  text.setAttribute('text','Main Funcs:');
+  text.setAttribute('text', Msg["PROCEDURES_MAIN_FUNCS"] + ':');
   text.setAttribute('web-class', 'ioLabel');
   xmlList.push(text);
 

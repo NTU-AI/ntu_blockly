@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Funksiyanın təyinatını vurğula";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Əgər bir dəyər \"doğru\"-dursa onda ikinci dəyəri qaytar.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Xəbərdarlıq: Bu blok ancaq bir funksiyanın təyinatı daxilində işlədilə bilər.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "Giriş adı:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Funksiyaya giriş parametrləri əlavə et.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "girişlər";

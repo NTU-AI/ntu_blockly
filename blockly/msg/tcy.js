@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "ದೆರ್ತ್ ತೋಜುನ �
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "ಮೌಲ್ಯೊ ಸತ್ಯೊ ಆಂಡ, ರಡ್ಡನೆ ಮೌಲ್ಯೊನು ಪಿರಕೊರು.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "ಎಚ್ಚರಿಕೆ: ಒಂಜಿ ಕಾರ್ಯ ವ್ಯಾಕ್ಯಾನೊದುಲಯಿ ಮಾತ್ರ ಈ ತಡೆನ್ ಗಲಸೊಲಿ.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "ಉಲಪರಿಪುದ ಪುದರ್:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "ಕಾರ್ಯೊಗು ಒಂಜಿ ಉಲಪರಿಪುನು ಸೇರಲೆ.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "ಉಲಪರಿಪು";

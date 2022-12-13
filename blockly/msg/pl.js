@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Podświetl definicję funkcji";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Jeśli warunek jest spełniony zwróć drugą wartość.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Uwaga: Ten klocek może być używany tylko w definicji funkcji.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "nazwa wejścia:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Dodaj wejście do funkcji.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "wejścia";

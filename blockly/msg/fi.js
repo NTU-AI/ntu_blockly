@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Korosta funktion määritelmä";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Jos arvo on tosi, palauta toinen arvo.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Varoitus: tätä lohkoa voi käyttää vain funktion määrityksessä.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "syötteen nimi:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Lisää sisääntulon funktioon.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "syötteet";

@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Підсвітити визначен
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Якщо значення істинне, то повернути друге значення.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Попередження: цей блок може використовуватися лише в межах визначення функції.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "назва входу:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Додати до функції вхідні параметри.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "входи";

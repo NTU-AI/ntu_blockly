@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Markera funktionsdefinition";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Om ett värde är sant returneras ett andra värde.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Varning: Detta block får användas endast i en funktionsdefinition.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "inmatningsnamn:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Lägg till en inmatning till funktionen.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inmatningar";

@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Sýna skilgreiningu falls";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Ef gildi er satt, skal skila öðru gildi.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Aðvörun: Þennan kubb má aðeins nota í skilgreiningu falls.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "heiti inntaks:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Bæta inntaki við fallið.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "inntök";

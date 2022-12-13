@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Highlight function definition";  // u
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Актәи аҵакы иашазар, иҳанаҭоит аҩбатәи аҵакы.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Агәаҽанҵара: Ари аблок ахархәара ауеит афункциа аԥҵара аҟны.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "апараметр ахьӡ:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Add an input to the function.";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "апараметрқәа";

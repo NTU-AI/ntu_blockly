@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Markiear Funktionsblock";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Wenn der earste Weart woahr (true) ist, Geb den zwooite Weart zurück.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Warnung: Der Block därref nuar innich en Funktionsblock genutzt sin.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "Markiear Funktionsblock";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Generier/erzeich \"Uffruf %1\"";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "Parameter";

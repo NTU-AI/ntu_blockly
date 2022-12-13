@@ -316,6 +316,7 @@ Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Thekso definicionin e funksionit";
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "Nëse një vlerë është e saktë, atëherë kthe një vlerë të dytë.";
 Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Paralajmërim: Ky bllok mund të përdoret vetëm brenda definicionit të funksionit.";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Method calls";  // untranslated
 Blockly.Msg["PROCEDURES_MUTATORARG_TITLE"] = "Fut emrin:";
 Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Shto një input në këtë funksion.";
 Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TITLE"] = "Informacioni i futur";
