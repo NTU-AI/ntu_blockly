@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2012 Google LLC
+ * Copyright 2017 Google LLC
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,12 +10,14 @@
  */
 'use strict';
 
-goog.module('Blockly.libraryBlocks.variables');
+goog.module('Blockly.libraryBlocks.variablesDynamic');
 
+/* eslint-disable-next-line no-unused-vars */
+const AbstractEvent = goog.requireType('Blockly.Events.Abstract');
 const ContextMenu = goog.require('Blockly.ContextMenu');
 const Extensions = goog.require('Blockly.Extensions');
 const Variables = goog.require('Blockly.Variables');
-const xmlUtils = goog.require('Blockly.utils.xml');
+const xml = goog.require('Blockly.utils.xml');
 /* eslint-disable-next-line no-unused-vars */
 const {Block} = goog.requireType('Blockly.Block');
 /* eslint-disable-next-line no-unused-vars */
@@ -35,24 +37,22 @@ goog.require('Blockly.FieldVariable');
 const blocks = createBlockDefinitionsFromJsonArray([
   // Block for variable getter.
   {
-    'type': 'variables_get',
+    'type': 'variables_get_dynamic',
     'message0': '%1',
-    'args0': [
-      {
-        'type': 'field_variable',
-        'name': 'VAR',
-        'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
-      },
-    ],
+    'args0': [{
+      'type': 'field_variable',
+      'name': 'VAR',
+      'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
+    }],
     'output': null,
-    'style': 'variable_blocks',
+    'style': 'variable_dynamic_blocks',
     'helpUrl': '%{BKY_VARIABLES_GET_HELPURL}',
     'tooltip': '%{BKY_VARIABLES_GET_TOOLTIP}',
-    'extensions': ['contextMenu_variableSetterGetter'],
+    'extensions': ['contextMenu_variableDynamicSetterGetter'],
   },
   // Block for variable setter.
   {
-    'type': 'variables_set',
+    'type': 'variables_set_dynamic',
     'message0': '%{BKY_VARIABLES_SET}',
     'args0': [
       {
@@ -67,65 +67,20 @@ const blocks = createBlockDefinitionsFromJsonArray([
     ],
     'previousStatement': null,
     'nextStatement': null,
-    'style': 'variable_blocks',
+    'style': 'variable_dynamic_blocks',
     'tooltip': '%{BKY_VARIABLES_SET_TOOLTIP}',
     'helpUrl': '%{BKY_VARIABLES_SET_HELPURL}',
-    'extensions': ['contextMenu_variableSetterGetter'],
-  },
-  {
-    'type': 'variables_call',
-    'message0': '%{BKY_CALL_TEXT} %1.%2',
-    'args0': [
-      {
-        'type': 'field_variable',
-        'name': 'VAR',
-        'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
-      },
-      {
-        'type': 'input_value',
-        'name': 'VALUE',
-      },
-    ],
-    'previousStatement': null,
-    'nextStatement': null,
-    'style': 'variable_blocks',
-    'tooltip': '%{BKY_VARIABLES_CALL_TOOLTIP}',
-    //'tooltip': 'Chama um método da variável atual.',
-    //'helpUrl': '%{BKY_VARIABLES_CALL_HELPURL}',
-    'extensions': ['contextMenu_variableSetterGetter'],
-  },
-  {
-    'type': 'variables_call_out',
-    'message0': '%{BKY_RETURN_TEXT} %1.%2',
-    'args0': [
-      {
-        'type': 'field_variable',
-        'name': 'VAR',
-        'variable': '%{BKY_VARIABLES_DEFAULT_NAME}',
-      },
-      {
-        'type': 'input_value',
-        'name': 'VALUE',
-      },
-    ],
-    'style': 'variable_blocks',
-    "output": null,
-    'tooltip': '%{BKY_VARIABLES_CALL_OUT_TOOLTIP}',
-    //'tooltip': 'Chama um método da variável atual com valor de retorno.',
-    //'helpUrl': '%{BKY_VARIABLES_CALL_OUT_HELPURL}',
-    'extensions': ['contextMenu_variableSetterGetter'],
+    'extensions': ['contextMenu_variableDynamicSetterGetter'],
   },
 ]);
 exports.blocks = blocks;
 
-
 /**
  * Mixin to add context menu items to create getter/setter blocks for this
  * setter/getter.
- * Used by blocks 'variables_set' and 'variables_get'.
+ * Used by blocks 'variables_set_dynamic' and 'variables_get_dynamic'.
  * @mixin
  * @augments Block
- * @package
  * @readonly
  */
 const CUSTOM_CONTEXT_MENU_VARIABLE_GETTER_SETTER_MIXIN = {
@@ -135,33 +90,36 @@ const CUSTOM_CONTEXT_MENU_VARIABLE_GETTER_SETTER_MIXIN = {
    * @this {Block}
    */
   customContextMenu: function(options) {
+    // Getter blocks have the option to create a setter block, and vice versa.
     if (!this.isInFlyout) {
       let oppositeType;
       let contextMenuMsg;
-      // Getter blocks have the option to create a setter block, and vice versa.
-      if (this.type === 'variables_get') {
-        oppositeType = 'variables_set';
+      const id = this.getFieldValue('VAR');
+      const variableModel = this.workspace.getVariableById(id);
+      const varType = variableModel.type;
+      if (this.type === 'variables_get_dynamic') {
+        oppositeType = 'variables_set_dynamic';
         contextMenuMsg = Msg['VARIABLES_GET_CREATE_SET'];
       } else {
-        oppositeType = 'variables_get';
+        oppositeType = 'variables_get_dynamic';
         contextMenuMsg = Msg['VARIABLES_SET_CREATE_GET'];
       }
 
       const option = {enabled: this.workspace.remainingCapacity() > 0};
       const name = this.getField('VAR').getText();
       option.text = contextMenuMsg.replace('%1', name);
-      const xmlField = xmlUtils.createElement('field');
+      const xmlField = xml.createElement('field');
       xmlField.setAttribute('name', 'VAR');
-      xmlField.appendChild(xmlUtils.createTextNode(name));
-      const xmlBlock = xmlUtils.createElement('block');
+      xmlField.setAttribute('variabletype', varType);
+      xmlField.appendChild(xml.createTextNode(name));
+      const xmlBlock = xml.createElement('block');
       xmlBlock.setAttribute('type', oppositeType);
       xmlBlock.appendChild(xmlField);
       option.callback = ContextMenu.callbackFactory(this, xmlBlock);
       options.push(option);
-      // Getter blocks have the option to rename or delete that variable.
     } else {
-      if (this.type === 'variables_get' ||
-          this.type === 'variables_get_reporter') {
+      if (this.type === 'variables_get_dynamic' ||
+          this.type === 'variables_get_reporter_dynamic') {
         const renameOption = {
           text: Msg['RENAME_VARIABLE'],
           enabled: true,
@@ -176,6 +134,21 @@ const CUSTOM_CONTEXT_MENU_VARIABLE_GETTER_SETTER_MIXIN = {
         options.unshift(renameOption);
         options.unshift(deleteOption);
       }
+    }
+  },
+  /**
+   * Called whenever anything on the workspace changes.
+   * Set the connection type for this block.
+   * @param {AbstractEvent} _e Change event.
+   * @this {Block}
+   */
+  onchange: function(_e) {
+    const id = this.getFieldValue('VAR');
+    const variableModel = Variables.getVariable(this.workspace, id);
+    if (this.type === 'variables_get_dynamic') {
+      this.outputConnection.setCheck(variableModel.type);
+    } else {
+      this.getInput('VALUE').connection.setCheck(variableModel.type);
     }
   },
 };
@@ -210,7 +183,7 @@ const deleteOptionCallbackFactory = function(block) {
 };
 
 Extensions.registerMixin(
-    'contextMenu_variableSetterGetter',
+    'contextMenu_variableDynamicSetterGetter',
     CUSTOM_CONTEXT_MENU_VARIABLE_GETTER_SETTER_MIXIN);
 
 // Register provided blocks.
