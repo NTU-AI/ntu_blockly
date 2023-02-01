@@ -376,5 +376,18 @@
 	"WORKSPACE_ARIA_LABEL": "Espaço de trabalho do Blockly",
 	"COLLAPSED_WARNINGS_WARNING": "Bloqueios recolhidos contêm avisos.",
 	"DIALOG_OK": "OK",
-	"DIALOG_CANCEL": "Cancelar"
+	"DIALOG_CANCEL": "Cancelar",
+
+	"VARIABLES_CALL_TOOLTIP": "Chama um método da variável atual",
+	"VARIABLES_CALL_OUT_TOOLTIP": "Chama um método da variável atual com retorno.",
+	"CALL_TEXT": "chamar",
+	"RETURN_TEXT": "retornar",
+	"PROCEDURES_SETUP_SUPERVISOR_TOOLTIP": "Bloco que contem os blocos de inicialização do supervisório.", 
+	"PROCEDURES_SETUP_TOOLTIP": "Bloco que contem os blocos de inicialização do programa.",
+	"PROCEDURES_RUN_TOOLTIP": "Bloco que contem os blocos de execução do programa.",
+	"PROCEDURES_SETUP_TITLE": "Inicialização", 
+	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Inicialização do Supervisório", 
+	"PROCEDURES_RUN_TITLE": "Execução",
+	"VARIABLES_METHODS_CALLS": "Chamadas de métodos",
+	"PROCEDURES_MAIN_FUNCS": "Funções principais"
 }

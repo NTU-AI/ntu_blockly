@@ -42,7 +42,8 @@
     // Load messages into a temporary Blockly.Msg object, deleting it
     // afterwards (after saving the messages!)
     window.Blockly = {Msg: Object.create(null)};
-    document.write('<script src="../../msg/messages.js"></script>');
+    //document.write('<script src="../../msg/messages.js"></script>');
+    document.write('<script src="../../msg/js/pt-br.js"></script>');
     document.write(`
         <script>
           window.BlocklyMsg = window.Blockly.Msg;

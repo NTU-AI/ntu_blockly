@@ -490,11 +490,12 @@ blocks['procedures_defnoreturn'] = {
 
 blocks['procedures_setup'] = {
   init: function () {
-    this.appendDummyInput().appendField("Setup");
+    //this.appendDummyInput().appendField("Setup");
+    this.appendDummyInput().appendField(Msg["PROCEDURES_SETUP_TITLE"]);
     this.appendStatementInput("DO").setCheck(null);
     // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
-    // this.setTooltip("Block that contains the blocks related to the setup of the program.");
     this.setTooltip(Msg['PROCEDURES_SETUP_TOOLTIP']);
+    //this.setTooltip("Bloco que contem os blocos de inicialização do programa.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
@@ -502,11 +503,12 @@ blocks['procedures_setup'] = {
 
 blocks['procedures_setup_supervisor'] = {
   init: function () {
-    this.appendDummyInput().appendField("Setup Supervisor");
+    //this.appendDummyInput().appendField("Setup Supervisor");
+    this.appendDummyInput().appendField(Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"]);
     this.appendStatementInput("DO").setCheck(null);
     // this.appendValueInput("RETURN").setCheck(null).setAlign(Blockly.ALIGN_RIGHT).appendField("return");
-    // this.setTooltip("Block that contains the blocks related to the setup of the supervisor.");
     this.setTooltip(Msg['PROCEDURES_SETUP_SUPERVISOR_TOOLTIP']);
+    //this.setTooltip("Bloco que contem os blocos de inicialização do supervisório.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },
@@ -514,10 +516,11 @@ blocks['procedures_setup_supervisor'] = {
 
 blocks['procedures_run'] = {
   init: function () {
-    this.appendDummyInput().appendField("Run");
+    //this.appendDummyInput().appendField("Run");
+    this.appendDummyInput().appendField(Msg["PROCEDURES_RUN_TITLE"]);
     this.appendStatementInput("DO").setCheck(null);
-    this.setTooltip("Block that contains the blocks related to the execution of the program.");
-    // this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
+    this.setTooltip(Msg['PROCEDURES_RUN_TOOLTIP']);
+    //this.setTooltip("Bloco que contem os blocos de execução do programa.");
     this.setHelpUrl("");
     this.setStyle('procedure_blocks');
   },

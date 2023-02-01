@@ -362,8 +362,6 @@
 	"VARIABLES_SET_HELPURL": "https://github.com/google/blockly/wiki/Variables#set",
 	"VARIABLES_SET": "set %1 to %2",
 	"VARIABLES_SET_TOOLTIP": "Sets this variable to be equal to the input.",
-	"VARIABLES_CALL_TOOLTIP": "Calls a method from current variable.",
-	"VARIABLES_CALL_OUT_TOOLTIP": "Returns the value of a method from current variable.",
 	"VARIABLES_SET_CREATE_GET": "Create 'get %1'",
 	"PROCEDURES_DEFNORETURN_HELPURL": "https://en.wikipedia.org/wiki/Subroutine",
 	"PROCEDURES_DEFNORETURN_TITLE": "to",
@@ -378,9 +376,6 @@
 	"PROCEDURES_DEFRETURN_TOOLTIP": "Creates a function with an output.",
 	"PROCEDURES_ALLOW_STATEMENTS": "allow statements",
 	"PROCEDURES_DEF_DUPLICATE_WARNING": "Warning: This function has duplicate parameters.",
-	"PROCEDURES_SETUP_TOOLTIP": "Block that contains the blocks related to the setup of the program.",
-	"PROCEDURES_SETUP_SUPERVISOR_TOOLTIP": "Block that contains the blocks related to the setup of the supervisor.",
-	"PROCEDURES_RUN_TOOLTIP": "Block that contains the blocks related to the execution of the program.",
 	"PROCEDURES_CALLNORETURN_HELPURL": "https://en.wikipedia.org/wiki/Subroutine",
 	"PROCEDURES_CALLNORETURN_TOOLTIP": "Run the user-defined function '%1'.",
 	"PROCEDURES_CALLRETURN_HELPURL": "https://en.wikipedia.org/wiki/Subroutine",
@@ -398,5 +393,18 @@
 	"WORKSPACE_ARIA_LABEL": "Blockly Workspace",
 	"COLLAPSED_WARNINGS_WARNING": "Collapsed blocks contain warnings.",
 	"DIALOG_OK": "OK",
-	"DIALOG_CANCEL": "Cancel"
+	"DIALOG_CANCEL": "Cancel",
+
+	"VARIABLES_CALL_TOOLTIP": "Calls a method from current variable.",
+	"VARIABLES_CALL_OUT_TOOLTIP": "Returns the value of a method from current variable.",
+	"CALL_TEXT": "call",
+	"RETURN_TEXT": "return",
+	"PROCEDURES_SETUP_TOOLTIP": "Block that contains the blocks related to the setup of the program.",
+	"PROCEDURES_SETUP_SUPERVISOR_TOOLTIP": "Block that contains the blocks related to the setup of the supervisor.",
+	"PROCEDURES_RUN_TOOLTIP": "Block that contains the blocks related to the execution of the program.",
+	"PROCEDURES_SETUP_TITLE": "Setup", 
+	"PROCEDURES_SETUP_SUPERVISOR_TITLE": "Supervisor Setup", 
+	"PROCEDURES_RUN_TITLE": "Run",
+	"VARIABLES_METHODS_CALLS": "Method calls",
+	"PROCEDURES_MAIN_FUNCS": "Main functions"
 }

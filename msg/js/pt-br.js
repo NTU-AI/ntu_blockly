@@ -423,3 +423,16 @@ Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
 Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+
+Blockly.Msg["VARIABLES_CALL_OUT_TOOLTIP"] = "Chama um método da variável atual com retorno.";  
+Blockly.Msg["VARIABLES_CALL_TOOLTIP"] = "Chama um método da variável atual."; 
+Blockly.Msg["CALL_TEXT"] = "chamar";
+Blockly.Msg["RETURN_TEXT"] = "retornar";
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TOOLTIP"] = "Bloco que contem os blocos de inicialização do supervisório."; 
+Blockly.Msg["PROCEDURES_SETUP_TOOLTIP"] = "Bloco que contem os blocos de inicialização do programa.";
+Blockly.Msg["PROCEDURES_RUN_TOOLTIP"] = "Bloco que contem os blocos de execução do programa.";
+Blockly.Msg["PROCEDURES_SETUP_TITLE"] = "Inicialização";
+Blockly.Msg["PROCEDURES_SETUP_SUPERVISOR_TITLE"] = "Inicialização do Supervisório";   
+Blockly.Msg["PROCEDURES_RUN_TITLE"] = "Execução";
+Blockly.Msg["VARIABLES_METHODS_CALLS"] = "Chamadas de métodos";
+Blockly.Msg["PROCEDURES_MAIN_FUNCS"] = "Funções principais"  
