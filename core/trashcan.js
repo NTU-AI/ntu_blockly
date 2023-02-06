@@ -247,7 +247,7 @@ class Trashcan extends DeleteArea {
           'width': 72, //SPRITE.width,
           'x': -SPRITE_LEFT,
           'height': 93, // SPRITE.height,
-          'y': -SPRITE_TOP,
+          'y': -21, //-SPRITE_TOP,
           'clip-path': 'url(#blocklyTrashLidClipPath' + rnd + ')',
         },
         this.svgGroup_);
