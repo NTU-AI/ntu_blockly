@@ -227,9 +227,9 @@ class Trashcan extends DeleteArea {
         clip);
     const body = dom.createSvgElement(
         Svg.IMAGE, {
-          'width': SPRITE.width,
+          'width': 72, //SPRITE.width,
           'x': -SPRITE_LEFT,
-          'height': SPRITE.height,
+          'height': 93, //SPRITE.height,
           'y': -SPRITE_TOP,
           'clip-path': 'url(#blocklyTrashBodyClipPath' + rnd + ')',
         },
@@ -244,9 +244,9 @@ class Trashcan extends DeleteArea {
         Svg.RECT, {'width': WIDTH, 'height': LID_HEIGHT}, clip);
     this.svgLid_ = dom.createSvgElement(
         Svg.IMAGE, {
-          'width': SPRITE.width,
+          'width': 72, //SPRITE.width,
           'x': -SPRITE_LEFT,
-          'height': SPRITE.height,
+          'height': 93, // SPRITE.height,
           'y': -SPRITE_TOP,
           'clip-path': 'url(#blocklyTrashLidClipPath' + rnd + ')',
         },
@@ -685,12 +685,12 @@ class Trashcan extends DeleteArea {
 /**
  * Width of both the trash can and lid images.
  */
-const WIDTH = 47;
+const WIDTH = 35;
 
 /**
  * Height of the trashcan image (minus lid).
  */
-const BODY_HEIGHT = 44;
+const BODY_HEIGHT = 30;
 
 /**
  * Height of the lid image.
@@ -705,7 +705,7 @@ const MARGIN_VERTICAL = 20;
 /**
  * Distance between trashcan and right or left edge of workspace.
  */
-const MARGIN_HORIZONTAL = 20;
+const MARGIN_HORIZONTAL = 15;
 
 /**
  * Extent of hotspot on all sides beyond the size of the image.
@@ -720,7 +720,7 @@ const SPRITE_LEFT = 0;
 /**
  * Location of trashcan in sprite image.
  */
-const SPRITE_TOP = 32;
+const SPRITE_TOP = 24;
 
 /**
  * The openness of the lid when the trashcan contains blocks.
