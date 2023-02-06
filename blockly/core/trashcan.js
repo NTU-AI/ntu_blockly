@@ -705,7 +705,7 @@ const MARGIN_VERTICAL = 20;
 /**
  * Distance between trashcan and right or left edge of workspace.
  */
-const MARGIN_HORIZONTAL = 15;
+const MARGIN_HORIZONTAL = 18;
 
 /**
  * Extent of hotspot on all sides beyond the size of the image.
