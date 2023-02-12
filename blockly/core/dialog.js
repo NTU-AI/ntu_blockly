@@ -197,11 +197,8 @@ let confirmImplementation = function(message, callback) {
 
 let promptImplementation = async function(message, defaultValue, callback) {
   let drops_dialog = new Dialog();
-  //console.log(drops_dialog);
   let r = undefined;
   await drops_dialog.prompt(message, defaultValue).then( (res) => {r = res.prompt});
-  console.log(r);
-  // console.log(window.prompt(message, defaultValue));
   callback(r);
 };
 

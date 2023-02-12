@@ -565,19 +565,19 @@ let content = (`
   margin-right: -24px;
 }
 
-/* Dialog box styling */
+/* ================== Dialog box styling ===================== */
 
 [data-component*="dialog"] * {  
-  box-sizing: border-box;
+  box-sizing: revert;
   outline-color: var(--dlg-outline-c, hsl(218, 79.19%, 35%))
 }
 :where([data-component*="dialog"]) {
   --dlg-gap: 1em;
   background: var(--dlg-bg, #fff);
-  border: var(--dlg-b, 0);
-  border-radius: var(--dlg-bdrs, 0.25em);
+  border: 10px;
+  border-radius: 8px;
   box-shadow: var(--dlg-bxsh, 0px 25px 50px -12px rgba(0, 0, 0, 0.25));
-  font-family:var(--dlg-ff, ui-sansserif, system-ui, sans-serif);
+  font-family: var(--dlg-ff, ui-sansserif, system-ui, sans-serif);
   min-inline-size: var(--dlg-mis, auto);
   padding: var(--dlg-p, var(--dlg-gap));
   width: var(--dlg-w, fit-content);
@@ -591,26 +591,38 @@ let content = (`
 }
 :where([data-component*="dialog"] menu) {
   display: flex;
-  gap: calc(var(--dlg-gap) / 2);
-  justify-content: var(--dlg-menu-jc, flex-end);
+  /* gap: var(--dlg-gap); */
+  justify-content: space-around;
   margin: 0;
   padding: 0;
+  width: calc(100% - 10px);
 }
 :where([data-component*="dialog"] menu button) {
   background-color: var(--dlg-button-bgc);
   border: 0;
-  border-radius: var(--dlg-bdrs, 0.25em);
+  border-radius: 8px !important;
   color: var(--dlg-button-c);
   font-size: var(--dlg-button-fz, 0.8em);
   padding: var(--dlg-button-p, 0.65em 1.5em);
+  width: 5em;
 }
 :where([data-component*="dialog"] [data-ref="accept"]) {
   --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 79.19%, 46.08%));
   --dlg-button-c: var(--dlg-accept-c, #fff);
 }
+:where([data-component*="dialog"] [data-ref="accept"]:hover) {
+  --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 88%, 53%));
+  --dlg-button-c: var(--dlg-accept-c, #fff);
+  font-weight: bolder;
+}
 :where([data-component*="dialog"] [data-ref="cancel"]) {
   --dlg-button-bgc: var(--dlg-cancel-bgc, transparent);
   --dlg-button-c: var(--dlg-cancel-c, inherit);
+}
+:where([data-component*="dialog"] [data-ref="cancel"]:hover) {
+  --dlg-button-bgc: var(--dlg-cancel-bgc, transparent);
+  --dlg-button-c: var(--dlg-cancel-c, inherit);
+  font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="fieldset"]) {
   border: 0;
@@ -642,6 +654,7 @@ let content = (`
 /* FOR DEMO */
 [name="prompt"] {
   border: 1px solid silver;
+  border-radius: 4px;
   padding: .6em 1em;
   width: 100%;
 }
