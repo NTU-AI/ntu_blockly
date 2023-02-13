@@ -617,11 +617,11 @@ let content = (`
   font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="cancel"]) {
-  background-color: lightslategray;
+  background-color: DarkGray;
   color: whitesmoke;
 }
 :where([data-component*="dialog"] [data-ref="cancel"]:hover) {
-  background-color: lightslategray;
+  background-color: DarkGray;
   filter: brightness(115%);
   color: whitesmoke;
   font-weight: bolder;
