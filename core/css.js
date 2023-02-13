@@ -598,30 +598,31 @@ let content = (`
   width: calc(100% - 10px);
 }
 :where([data-component*="dialog"] menu button) {
-  background-color: var(--dlg-button-bgc);
   border: 0;
   border-radius: 8px !important;
   color: var(--dlg-button-c);
   font-size: var(--dlg-button-fz, 0.8em);
   padding: var(--dlg-button-p, 0.65em 1.5em);
-  width: 8em !important 4;
+  width: 8em !important;
 }
 :where([data-component*="dialog"] [data-ref="accept"]) {
-  --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 79.19%, 46.08%));
-  --dlg-button-c: var(--dlg-accept-c, #fff);
+  background-color: #61b3c5;
+  color: var(--dlg-accept-c, #fff);
 }
 :where([data-component*="dialog"] [data-ref="accept"]:hover) {
-  --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 88%, 53%));
-  --dlg-button-c: var(--dlg-accept-c, #fff);
+  background-color: #61b3c5;
+  filter: brightness(115%);
+  color: var(--dlg-accept-c, #fff);
   font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="cancel"]) {
-  --dlg-button-bgc: var(--dlg-cancel-bgc, transparent);
-  --dlg-button-c: var(--dlg-cancel-c, inherit);
+  background-color: lightslategray;
+  color: whitesmoke;
 }
 :where([data-component*="dialog"] [data-ref="cancel"]:hover) {
-  --dlg-button-bgc: var(--dlg-cancel-bgc, transparent);
-  --dlg-button-c: var(--dlg-cancel-c, inherit);
+  background-color: lightslategray;
+  filter: brightness(115%);
+  color: whitesmoke;
   font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="fieldset"]) {

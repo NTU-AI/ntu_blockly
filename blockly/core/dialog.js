@@ -16,6 +16,7 @@
  * @namespace Blockly.dialog
  */
 goog.module('Blockly.dialog');
+const {Msg} = goog.require('Blockly.Msg');
 
 
 /**
@@ -30,9 +31,9 @@ class Dialog {
   constructor(settings = {}) {
     this.settings = Object.assign(
       {
-        accept: 'OK',
+        accept: Msg['DIALOG_OK'],
         bodyClass: 'dialog-open',
-        cancel: 'Cancel',
+        cancel: Msg['DIALOG_CANCEL'],
         dialogClass: '',
         message: '',
         soundAccept: '',
