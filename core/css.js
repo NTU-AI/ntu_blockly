@@ -568,8 +568,8 @@ let content = (`
 /* ================== Dialog box styling ===================== */
 
 [data-component*="dialog"] * {  
-  box-sizing: revert;
-  outline-color: var(--dlg-outline-c, hsl(218, 79.19%, 35%))
+  outline-color: var(--dlg-outline-c, hsl(218, 79.19%, 35%));
+  width: 100%;
 }
 :where([data-component*="dialog"]) {
   --dlg-gap: 1em;
@@ -577,7 +577,7 @@ let content = (`
   border: 10px;
   border-radius: 8px;
   box-shadow: var(--dlg-bxsh, 0px 25px 50px -12px rgba(0, 0, 0, 0.25));
-  font-family: var(--dlg-ff, ui-sansserif, system-ui, sans-serif);
+  font-family: 'Lato';
   min-inline-size: var(--dlg-mis, auto);
   padding: var(--dlg-p, var(--dlg-gap));
   width: var(--dlg-w, fit-content);
@@ -604,7 +604,7 @@ let content = (`
   color: var(--dlg-button-c);
   font-size: var(--dlg-button-fz, 0.8em);
   padding: var(--dlg-button-p, 0.65em 1.5em);
-  width: 5em;
+  width: 8em !important 4;
 }
 :where([data-component*="dialog"] [data-ref="accept"]) {
   --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 79.19%, 46.08%));
@@ -630,7 +630,7 @@ let content = (`
   padding: unset;
 }
 :where([data-component*="dialog"] [data-ref="message"]) {
-  font-size: var(--dlg-message-fz, 1.25em);
+  font-size: var(--dlg-message-fz, 1.25em) !important;
   margin-block-end: var(--dlg-gap);
 }
 :where([data-component*="dialog"] [data-ref="template"]:not(:empty)) {
