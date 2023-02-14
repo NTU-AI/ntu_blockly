@@ -31,7 +31,7 @@ class Dialog {
   constructor(settings = {}) {
     this.settings = Object.assign(
       {
-        accept: Msg['DIALOG_OK'],
+        accept: 'Confirmar', // Adicionar DIALOG_CONFIRM em blockly/msg 
         bodyClass: 'dialog-open',
         cancel: Msg['DIALOG_CANCEL'],
         dialogClass: '',
@@ -76,8 +76,8 @@ class Dialog {
         <div data-ref="template"></div>
       </fieldset>
       <menu>
-        <button${this.dialogSupported ? '' : ` type="button"`} data-ref="cancel" value="cancel"></button>
         <button${this.dialogSupported ? '' : ` type="button"`} data-ref="accept" value="default"></button>
+        <button${this.dialogSupported ? '' : ` type="button"`} data-ref="cancel" value="cancel"></button>
       </menu>
       <audio data-ref="soundAccept"></audio>
       <audio data-ref="soundOpen"></audio>

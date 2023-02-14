@@ -603,7 +603,7 @@ let content = (`
   color: var(--dlg-button-c);
   font-size: var(--dlg-button-fz, 0.8em);
   padding: var(--dlg-button-p, 0.65em 1.5em);
-  width: 7em !important;
+  width: 8em !important;
   margin-inline: 5px !important;
 }
 :where([data-component*="dialog"] [data-ref="accept"]) {
@@ -614,7 +614,6 @@ let content = (`
   background-color: #61b3c5;
   filter: brightness(115%);
   color: var(--dlg-accept-c, #fff);
-  font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="cancel"]) {
   background-color: DarkGray;
@@ -624,7 +623,6 @@ let content = (`
   background-color: DarkGray;
   filter: brightness(115%);
   color: whitesmoke;
-  font-weight: bolder;
 }
 :where([data-component*="dialog"] [data-ref="fieldset"]) {
   border: 0;
