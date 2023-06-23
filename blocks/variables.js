@@ -74,8 +74,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
   },
   {
     'type': 'variables_call',
-    'message0': '%{BKY_CALL_TEXT} %1 %2',
-    //'message0': 'chamar %1 %2',
+    'message0': '%{BKY_CALL_TEXT} %1.%2',
     'args0': [
       {
         'type': 'field_variable',
@@ -89,7 +88,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
     ],
     'previousStatement': null,
     'nextStatement': null,
-    'style': 'variable_blocks',
+    'style': 'variable_call_blocks',
     'tooltip': '%{BKY_VARIABLES_CALL_TOOLTIP}',
     //'tooltip': 'Chama um método da variável atual.',
     //'helpUrl': '%{BKY_VARIABLES_CALL_HELPURL}',
@@ -97,8 +96,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
   },
   {
     'type': 'variables_call_out',
-    'message0': '%{BKY_RETURN_TEXT} %1 %2',
-    //'message0': 'retornar %1 %2',
+    'message0': '%{BKY_RETURN_TEXT} %1.%2',
     'args0': [
       {
         'type': 'field_variable',
@@ -110,7 +108,7 @@ const blocks = createBlockDefinitionsFromJsonArray([
         'name': 'VALUE',
       },
     ],
-    'style': 'variable_blocks',
+    'style': 'variable_call_blocks',
     "output": null,
     'tooltip': '%{BKY_VARIABLES_CALL_OUT_TOOLTIP}',
     //'tooltip': 'Chama um método da variável atual com valor de retorno.',

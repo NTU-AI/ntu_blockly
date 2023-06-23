@@ -87,24 +87,24 @@ Python['controls_for'] = function(block) {
   // Helper functions.
   const defineUpRange = function() {
     return Python.provideFunction_('upRange', `
-def ${Python.FUNCTION_NAME_PLACEHOLDER_}(start, stop, step):
-  while start <= stop:
+def ${Python.FUNCTION_NAME_PLACEHOLDER_}(self, start, stop, step):
+  while ` + initialArg + ` and start <= stop:
     yield start
     start += abs(step)
 `);
   };
   const defineDownRange = function() {
     return Python.provideFunction_('downRange', `
-def ${Python.FUNCTION_NAME_PLACEHOLDER_}(start, stop, step):
-  while start >= stop:
+def ${Python.FUNCTION_NAME_PLACEHOLDER_}(self, start, stop, step):
+  while ` + initialArg + ` and start >= stop:
     yield start
     start -= abs(step)
 `);
   };
   // Arguments are legal Python code (numbers or strings returned by scrub()).
   const generateUpDownRange = function(start, end, inc) {
-    return '(' + start + ' <= ' + end + ') and ' + defineUpRange() + '(' +
-        start + ', ' + end + ', ' + inc + ') or ' + defineDownRange() + '(' +
+    return '(' + start + ' <= ' + end + ') and self.' + defineUpRange() + '(' +
+        start + ', ' + end + ', ' + inc + ') or self.' + defineDownRange() + '(' +
         start + ', ' + end + ', ' + inc + ')';
   };
 
