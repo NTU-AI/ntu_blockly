@@ -309,8 +309,50 @@ export function flyoutCategory(workspace: WorkspaceSvg): Element[] {
   }
 
   const tuple = allProcedures(workspace);
+
+  if (tuple[0].length>0 || tuple[1].length>0){
+    const text = utilsXml.createElement('label');
+    text.setAttribute('text','Created Funcs:');
+    text.setAttribute('web-class', 'ioLabel');
+    xmlList.push(text);
+  }
+
   populateProcedures(tuple[0], 'procedures_callnoreturn');
   populateProcedures(tuple[1], 'procedures_callreturn');
+
+  if (xmlList.length) {
+    // Add slightly larger gap between system blocks and user calls.
+    xmlList[xmlList.length - 1].setAttribute('gap', '24');
+  }
+  const text = utilsXml.createElement('label');
+  text.setAttribute('text', Msg["PROCEDURES_MAIN_FUNCS"] + ':');
+  text.setAttribute('web-class', 'ioLabel');
+  xmlList.push(text);
+  if (Blocks['procedures_setup']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_setup');
+    block.setAttribute('gap', '16');
+    //block.setAttribute('disabled', true);
+    xmlList.push(block);
+  }
+  if (Blocks['procedures_setup_supervisor']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_setup_supervisor');
+    block.setAttribute('gap', '16');
+    //block.setAttribute('disabled', true);
+    xmlList.push(block);
+  }
+  if (Blocks['procedures_run']) {
+    // <block type="procedures_ifreturn" gap="16"></block>
+    const block = utilsXml.createElement('block');
+    block.setAttribute('type', 'procedures_run');
+    block.setAttribute('gap', '16');
+    //block.setAttribute('disabled', true);
+    xmlList.push(block);
+  }
+
   return xmlList;
 }
 

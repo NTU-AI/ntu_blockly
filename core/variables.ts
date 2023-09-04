@@ -128,7 +128,7 @@ export function flyoutCategoryBlocks(workspace: Workspace): Element[] {
     if (Blocks['math_change']) {
       const block = utilsXml.createElement('block');
       block.setAttribute('type', 'math_change');
-      block.setAttribute('gap', Blocks['variables_get'] ? '20' : '8');
+      block.setAttribute('gap', Blocks['variables_call'] ? '20' : '8');
       block.appendChild(generateVariableFieldDom(mostRecentVariable));
       const value = utilsXml.textToDom(
         '<value name="DELTA">' +
@@ -146,11 +146,31 @@ export function flyoutCategoryBlocks(workspace: Workspace): Element[] {
       for (let i = 0, variable; (variable = variableModelList[i]); i++) {
         const block = utilsXml.createElement('block');
         block.setAttribute('type', 'variables_get');
-        block.setAttribute('gap', '8');
+        block.setAttribute('gap', (i === (variableModelList.length-1)) ? '24': '8');
         block.appendChild(generateVariableFieldDom(variable));
         xmlList.push(block);
       }
     }
+
+    const text = utilsXml.createElement('label');
+    text.setAttribute('text', Msg["VARIABLES_METHODS_CALLS"] + ':');
+    text.setAttribute('web-class', 'ioLabel');
+    xmlList.push(text);
+    if (Blocks['variables_call']) {
+      const block = utilsXml.createElement('block');
+      block.setAttribute('type', 'variables_call');
+      block.setAttribute('gap', Blocks['variables_call_out'] ? '8' : '24');
+      block.appendChild(generateVariableFieldDom(variableModelList[0]));
+      xmlList.push(block);
+    }
+    
+    if (Blocks['variables_call_out']) {
+      const block = utilsXml.createElement('block');
+      block.setAttribute('type', 'variables_call_out');
+      block.appendChild(generateVariableFieldDom(variableModelList[0]));
+      xmlList.push(block);
+    }
+
   }
   return xmlList;
 }

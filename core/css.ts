@@ -496,4 +496,119 @@ input[type=number] {
   float: right;
   margin-right: -24px;
 }
+
+/* ================== Dialog box styling ===================== */
+
+[data-component*="dialog"] * {  
+  outline-color: var(--dlg-outline-c, hsl(218, 79.19%, 35%));
+  width: 100%;
+}
+:where([data-component*="dialog"]) {
+  --dlg-gap: 1em;
+  background: var(--dlg-bg, #fff);
+  border: 10px;
+  border-radius: 8px;
+  box-shadow: var(--dlg-bxsh, 0px 25px 50px -12px rgba(0, 0, 0, 0.25));
+  font-family: 'Lato';
+  min-inline-size: var(--dlg-mis, auto);
+  padding: var(--dlg-p, var(--dlg-gap));
+  width: var(--dlg-w, fit-content);
+}
+:where([data-component="no-dialog"]:not([hidden])) {
+  display: block;
+  inset-block-start: var(--dlg-gap);
+  inset-inline-start: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+}
+:where([data-component*="dialog"] menu) {
+  display: flex;
+  /* gap: var(--dlg-gap); */
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 10px);
+}
+:where([data-component*="dialog"] menu button) {
+  border: 0;
+  border-radius: 8px !important;
+  color: var(--dlg-button-c);
+  font-size: var(--dlg-button-fz, 0.8em);
+  padding: var(--dlg-button-p, 0.65em 1.5em);
+  width: 8em !important;
+  margin-inline: 5px !important;
+}
+:where([data-component*="dialog"] [data-ref="accept"]) {
+  background-color: #61b3c5;
+  color: var(--dlg-accept-c, #fff);
+}
+:where([data-component*="dialog"] [data-ref="accept"]:hover) {
+  background-color: #61b3c5;
+  filter: brightness(115%);
+  color: var(--dlg-accept-c, #fff);
+}
+:where([data-component*="dialog"] [data-ref="cancel"]) {
+  background-color: DarkGray;
+  color: whitesmoke;
+}
+:where([data-component*="dialog"] [data-ref="cancel"]:hover) {
+  background-color: DarkGray;
+  filter: brightness(115%);
+  color: whitesmoke;
+}
+:where([data-component*="dialog"] [data-ref="fieldset"]) {
+  border: 0;
+  margin: unset;
+  padding: unset;
+}
+:where([data-component*="dialog"] [data-ref="message"]) {
+  font-size: var(--dlg-message-fz, 1.25em) !important;
+  margin-block-end: var(--dlg-gap);
+}
+:where([data-component*="dialog"] [data-ref="template"]:not(:empty)) {
+  margin-block-end: var(--dlg-gap);
+  width: 100%;
+}
+
+/* hack for Firefox */
+@-moz-document url-prefix() { 
+  [data-component="no-dialog"]:not([hidden]) {
+    inset-inline-start: 0;
+     transform: none;
+  }
+}
+
+.dialog-open {
+  background-color: rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+
+/* FOR DEMO */
+[name="prompt"] {
+  border: 1px solid silver;
+  border-radius: 4px;
+  padding: .6em 1em;
+  width: 100%;
+}
+
+.custom {
+  --dlg-accept-bgc: hsl(159, 65%, 75%);
+  --dlg-accept-c: #000;
+  --dlg-bg: linear-gradient(to bottom right,#00F5A0,#00D9F5);
+  --dlg-button-p: 0.75em 2em;
+  --dlg-outline-c: #00D9F5;
+}
+.custom input {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: .25em;
+  border: 0;
+  display: block;
+  margin-block: .5em 1em;
+  padding: .75em 1em;
+  width: 100%;
+}
+.custom label {
+  display: block;
+  font-size: small;
+}
 `;

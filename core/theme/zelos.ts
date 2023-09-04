@@ -49,6 +49,11 @@ const defaultBlockStyles = {
     'colourSecondary': '#FF8000',
     'colourTertiary': '#DB6E00',
   },
+  'variable_call_blocks': {
+    'colourPrimary': '#DB6E00',
+    'colourSecondary': '#BD5F00',
+    'colourTertiary': '#A35200',
+  },
   'variable_dynamic_blocks': {
     'colourPrimary': '#FF8C1A',
     'colourSecondary': '#FF8000',
