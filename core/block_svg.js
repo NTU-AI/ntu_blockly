@@ -956,6 +956,16 @@ class BlockSvg extends Block {
     if (this.workspace.isFlyout) {
       return;
     }
+
+    /**
+     * Added by lucaslbmp
+     * Check if the current block is child of a call or return block and, if so, change their colors to the default color
+     */
+    const parentBlock = this.getParent();
+    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){
+      parentBlock.setStyle("variable_call_blocks");
+    }
+
     eventUtils.setGroup(true);
     this.workspace.hideChaff();
     if (this.outputConnection) {

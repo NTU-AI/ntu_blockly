@@ -114,6 +114,7 @@ class Connection {
     const parentBlock = parentConnection.getSourceBlock();
     const childBlock = childConnection.getSourceBlock();
 
+
     // Make sure the childConnection is available.
     if (childConnection.isConnected()) {
       childConnection.disconnect();
@@ -158,6 +159,13 @@ class Connection {
       } else {
         orphanConnection.onFailedConnect(parentConnection);
       }
+    }
+
+    if(parentBlock.type === "variables_call" || parentBlock.type === "variables_call_out"){ 
+      if(childBlock?.style.colourPrimary !== "#000000")
+        parentBlock.setColour(childConnection?.sourceBlock_?.style.colourPrimary)
+      else
+        parentBlock.setStyle("variable_call_blocks"); 
     }
   }
 
