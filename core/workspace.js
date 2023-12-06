@@ -638,6 +638,10 @@ class Workspace {
     if (!inputEvent) {
       return;
     }
+
+    const _blockId = inputEvent.blockId;
+    const parentBlock = this.getBlockById(_blockId)?.getParent();
+
     let events = [inputEvent];
     // Do another undo/redo if the next one is of the same group.
     while (inputStack.length && inputEvent.group &&
@@ -657,6 +661,9 @@ class Workspace {
         event.run(redo);
       }
     } finally {
+      if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") && inputEvent.type === "move"){
+        parentBlock?.setStyle("variable_call_blocks");
+      }
       eventUtils.setRecordUndo(true);
     }
   }
