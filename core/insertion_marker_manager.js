@@ -649,6 +649,12 @@ class InsertionMarkerManager {
     imBlock.rendered = true;
     imBlock.getSvgRoot().setAttribute('visibility', 'visible');
 
+    // Added by lucaslbmp 
+    // Changing call/return block color to the color of the block that is being dragged into it
+    const parentBlock = closest?.getSourceBlock();
+    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out")
+      parentBlock.setColour(this.topBlock_.colour_)
+
     if (imConn && closest) {
       // Position so that the existing block doesn't move.
       imBlock.positionNearConnection(imConn, closest);
@@ -677,6 +683,10 @@ class InsertionMarkerManager {
     const markerNext = imBlock.nextConnection;
     const markerPrev = imBlock.previousConnection;
     const markerOutput = imBlock.outputConnection;
+
+    // Added by lucaslbmp
+    // Getting parent block of the insertion marker block
+    const parentBlock = imBlock?.getParent(); 
 
     const isFirstInStatementStack =
         (imConn === markerNext && !(markerPrev && markerPrev.targetConnection));
@@ -716,6 +726,15 @@ class InsertionMarkerManager {
     if (svg) {
       svg.setAttribute('visibility', 'hidden');
     }
+
+    // Added by lucaslbmp
+    // Returning call/return blocks to the original color when child is disconnected 
+    //console.log(parentBlock)
+    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){
+      parentBlock.setStyle("variable_call_blocks")
+      //console.log(parentBlock);
+    }
+
   }
 
   /**

@@ -164,8 +164,9 @@ class Connection {
     if(parentBlock.type === "variables_call" || parentBlock.type === "variables_call_out"){ 
       if(childBlock?.style.colourPrimary !== "#000000")
         parentBlock.setColour(childConnection?.sourceBlock_?.style.colourPrimary)
-      else
-        parentBlock.setStyle("variable_call_blocks"); 
+      else{
+        //parentBlock.setStyle("variable_call_blocks"); 
+      }
     }
   }
 
@@ -328,6 +329,10 @@ class Connection {
     if (event) {
       event.recordNew();
       eventUtils.fire(event);
+    }
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") &&
+      childBlock?.style.colourPrimary !== "#000000"){
+        parentBlock.setStyle("variable_call_blocks"); 
     }
   }
 
