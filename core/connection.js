@@ -161,11 +161,14 @@ class Connection {
       }
     }
 
+    // Added by lucaslbmp
+    // Changing color of call/return block to the color of the child block
+    //console.log("connect: ",parentBlock)
     if(parentBlock.type === "variables_call" || parentBlock.type === "variables_call_out"){ 
-      if(childBlock?.style.colourPrimary !== "#000000")
-        parentBlock.setColour(childConnection?.sourceBlock_?.style.colourPrimary)
+      if(childBlock?.colour_ !== "#000000")
+        parentBlock.setColour(childConnection?.sourceBlock_?.colour_)
       else{
-        //parentBlock.setStyle("variable_call_blocks"); 
+        parentBlock?.setStyle("variable_call_blocks"); 
       }
     }
   }
@@ -317,6 +320,14 @@ class Connection {
    * @protected
    */
   disconnectInternal_(parentBlock, childBlock) {
+    // Added by lucaslbmp
+    // Returning call/return block to original color when child block is disconected
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") &&
+      childBlock.colour_ !== "#000000"){
+      parentBlock?.setStyle("variable_call_blocks"); 
+      //console.log("disconnect: ",childBlock.colour_)
+    }
+
     let event;
     if (eventUtils.isEnabled()) {
       event = /** @type {!BlockMove} */
@@ -329,10 +340,6 @@ class Connection {
     if (event) {
       event.recordNew();
       eventUtils.fire(event);
-    }
-    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") &&
-      childBlock?.style.colourPrimary !== "#000000"){
-        parentBlock.setStyle("variable_call_blocks"); 
     }
   }
 
