@@ -227,6 +227,7 @@ class InsertionMarkerManager {
       eventUtils.enable();
       // Connect two blocks together.
       this.localConnection_.connect(this.closestConnection_);
+
       if (this.topBlock_.rendered) {
         // Trigger a connection animation.
         // Determine which connection is inferior (lower in the source stack).
@@ -716,6 +717,7 @@ class InsertionMarkerManager {
     if (svg) {
       svg.setAttribute('visibility', 'hidden');
     }
+
   }
 
   /**
@@ -726,6 +728,10 @@ class InsertionMarkerManager {
     const closest = this.closestConnection_;
     this.highlightedBlock_ = closest.getSourceBlock();
     this.highlightedBlock_.highlightShapeForInput(closest, true);
+
+    if(this.highlightedBlock_.type === "variables_call" || this.highlightedBlock_.type === "variables_call_out"){ 
+      this.highlightedBlock_.setColour(this.topBlock_.colour_);
+    }
   }
 
   /**
@@ -733,6 +739,10 @@ class InsertionMarkerManager {
    * @private
    */
   hideInsertionInputOutline_() {
+    if(this.highlightedBlock_.type === "variables_call" || this.highlightedBlock_.type === "variables_call_out"){ 
+      this.highlightedBlock_.setStyle("variable_call_blocks");
+    }
+
     this.highlightedBlock_.highlightShapeForInput(
         this.closestConnection_, false);
     this.highlightedBlock_ = null;

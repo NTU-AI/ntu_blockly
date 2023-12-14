@@ -638,6 +638,10 @@ class Workspace {
     if (!inputEvent) {
       return;
     }
+
+    const _blockId = inputEvent.blockId;
+    const parentBlock = this.getBlockById(_blockId)?.getParent();
+
     let events = [inputEvent];
     // Do another undo/redo if the next one is of the same group.
     while (inputStack.length && inputEvent.group &&
@@ -659,6 +663,14 @@ class Workspace {
     } finally {
       eventUtils.setRecordUndo(true);
     }
+
+      // Added by lucaslbmp
+      // Returning return/call blocks to original color when child block connection is redone/undone
+      const inputBlock = this.getBlockById(_blockId)?.outputConnection?.targetConnection?.getSourceBlock();
+      if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out" && parentBlock?.workspace) 
+        && inputEvent.type === "move" && inputBlock){
+        parentBlock?.setStyle("variable_call_blocks");
+      }
   }
 
   /**

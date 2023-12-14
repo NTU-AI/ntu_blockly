@@ -114,6 +114,7 @@ class Connection {
     const parentBlock = parentConnection.getSourceBlock();
     const childBlock = childConnection.getSourceBlock();
 
+
     // Make sure the childConnection is available.
     if (childConnection.isConnected()) {
       childConnection.disconnect();
@@ -157,6 +158,18 @@ class Connection {
         orphanConnection.connect(connection);
       } else {
         orphanConnection.onFailedConnect(parentConnection);
+      }
+    }
+
+    // Added by lucaslbmp
+    // Changing color of call/return block to the color of the child block
+    const inputBlock = childBlock.outputConnection?.targetConnection?.getSourceBlock();
+    if(parentBlock.type === "variables_call" || parentBlock.type === "variables_call_out"){ 
+      if(childBlock?.colour_ !== "#000000"  && !!inputBlock){
+        parentBlock.setColour(childConnection?.sourceBlock_?.colour_)
+      }
+      else if(parentBlock.workspace && !!inputBlock){
+        parentBlock?.setStyle("variable_call_blocks"); 
       }
     }
   }
@@ -308,6 +321,14 @@ class Connection {
    * @protected
    */
   disconnectInternal_(parentBlock, childBlock) {
+    // Added by lucaslbmp
+    // Returning call/return block to original color when child block is disconected
+    const inputBlock = childBlock.outputConnection?.targetConnection?.getSourceBlock();
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") &&
+    childBlock.colour_ !== "#000000" && parentBlock?.workspace && !!inputBlock){
+      parentBlock?.setStyle("variable_call_blocks"); 
+    }
+
     let event;
     if (eventUtils.isEnabled()) {
       event = /** @type {!BlockMove} */
