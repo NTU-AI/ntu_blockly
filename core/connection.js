@@ -163,11 +163,12 @@ class Connection {
 
     // Added by lucaslbmp
     // Changing color of call/return block to the color of the child block
-    //console.log("connect: ",parentBlock)
+    const inputBlock = childBlock.outputConnection?.targetConnection?.getSourceBlock();
     if(parentBlock.type === "variables_call" || parentBlock.type === "variables_call_out"){ 
-      if(childBlock?.colour_ !== "#000000")
+      if(childBlock?.colour_ !== "#000000"  && !!inputBlock){
         parentBlock.setColour(childConnection?.sourceBlock_?.colour_)
-      else{
+      }
+      else if(parentBlock.workspace && !!inputBlock){
         parentBlock?.setStyle("variable_call_blocks"); 
       }
     }
@@ -322,10 +323,10 @@ class Connection {
   disconnectInternal_(parentBlock, childBlock) {
     // Added by lucaslbmp
     // Returning call/return block to original color when child block is disconected
+    const inputBlock = childBlock.outputConnection?.targetConnection?.getSourceBlock();
     if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") &&
-      childBlock.colour_ !== "#000000"){
+    childBlock.colour_ !== "#000000" && parentBlock?.workspace && !!inputBlock){
       parentBlock?.setStyle("variable_call_blocks"); 
-      //console.log("disconnect: ",childBlock.colour_)
     }
 
     let event;

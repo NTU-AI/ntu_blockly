@@ -962,7 +962,8 @@ class BlockSvg extends Block {
      * Check if the current block is child of a call or return block and, if so, change their colors to the default color
      */
     const parentBlock = this.getParent();
-    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){
+    const inputBlock = this.outputConnection?.targetConnection?.getSourceBlock();
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") && inputBlock){
       parentBlock.setStyle("variable_call_blocks");
     }
 
@@ -1266,6 +1267,11 @@ class BlockSvg extends Block {
     this.styleName_ = styleObj.name;
 
     this.applyColour();
+
+    const parentBlock = this.getParent()
+    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){ 
+      parentBlock.setColour(colour)
+    }
   }
 
   /**
@@ -1285,6 +1291,12 @@ class BlockSvg extends Block {
       // Set colour to match Block.
       this.colour_ = blockStyle.colourPrimary;
       this.style = blockStyle;
+
+    const parentBlock = this.getParent()
+    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){ 
+      if(blockStyleName === "variable_call_blocks")
+        parentBlock.setStyle(blockStyleName)
+    }
 
       this.applyColour();
     } else {

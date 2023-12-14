@@ -227,6 +227,7 @@ class InsertionMarkerManager {
       eventUtils.enable();
       // Connect two blocks together.
       this.localConnection_.connect(this.closestConnection_);
+
       if (this.topBlock_.rendered) {
         // Trigger a connection animation.
         // Determine which connection is inferior (lower in the source stack).
@@ -659,13 +660,6 @@ class InsertionMarkerManager {
     }
 
     this.markerConnection_ = imConn;
-
-     // Added by lucaslbmp 
-    // Changing call/return block color to the color of the block that is being dragged into it
-    const parentBlock = closest?.getSourceBlock();
-    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out")
-      parentBlock.setColour(this.topBlock_.colour_)
-    //console.log(parentBlock);
   }
 
   /**
@@ -684,18 +678,6 @@ class InsertionMarkerManager {
     const markerNext = imBlock.nextConnection;
     const markerPrev = imBlock.previousConnection;
     const markerOutput = imBlock.outputConnection;
-
-    // Added by lucaslbmp
-    // Getting parent block of the insertion marker block
-    const parentBlock = imBlock?.getParent(); 
-
-    // Added by lucaslbmp
-    // Returning call/return blocks to the original color when child is disconnected 
-    //console.log(parentBlock)
-    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){
-      //parentBlock?.setStyle("variable_call_blocks")
-      //console.log(parentBlock);
-    }
 
     const isFirstInStatementStack =
         (imConn === markerNext && !(markerPrev && markerPrev.targetConnection));
@@ -746,6 +728,10 @@ class InsertionMarkerManager {
     const closest = this.closestConnection_;
     this.highlightedBlock_ = closest.getSourceBlock();
     this.highlightedBlock_.highlightShapeForInput(closest, true);
+
+    if(this.highlightedBlock_.type === "variables_call" || this.highlightedBlock_.type === "variables_call_out"){ 
+      this.highlightedBlock_.setColour(this.topBlock_.colour_);
+    }
   }
 
   /**
@@ -753,6 +739,10 @@ class InsertionMarkerManager {
    * @private
    */
   hideInsertionInputOutline_() {
+    if(this.highlightedBlock_.type === "variables_call" || this.highlightedBlock_.type === "variables_call_out"){ 
+      this.highlightedBlock_.setStyle("variable_call_blocks");
+    }
+
     this.highlightedBlock_.highlightShapeForInput(
         this.closestConnection_, false);
     this.highlightedBlock_ = null;
