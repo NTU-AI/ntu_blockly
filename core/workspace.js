@@ -667,7 +667,8 @@ class Workspace {
       // Added by lucaslbmp
       // Returning return/call blocks to original color when child block connection is redone/undone
       const inputBlock = this.getBlockById(_blockId)?.outputConnection?.targetConnection?.getSourceBlock();
-      if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") && inputEvent.type === "move" && inputBlock){
+      if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out" && parentBlock?.workspace) 
+        && inputEvent.type === "move" && inputBlock){
         parentBlock?.setStyle("variable_call_blocks");
       }
   }
