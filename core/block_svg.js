@@ -1269,7 +1269,8 @@ class BlockSvg extends Block {
     this.applyColour();
 
     const parentBlock = this.getParent()
-    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){ 
+    const inputBlock = this.outputConnection?.targetConnection?.getSourceBlock();
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") && inputBlock){ 
       parentBlock.setColour(colour)
     }
   }
@@ -1293,7 +1294,8 @@ class BlockSvg extends Block {
       this.style = blockStyle;
 
     const parentBlock = this.getParent()
-    if(parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out"){ 
+    const inputBlock = this.outputConnection?.targetConnection?.getSourceBlock();
+    if((parentBlock?.type === "variables_call" || parentBlock?.type === "variables_call_out") && inputBlock){ 
       if(blockStyleName === "variable_call_blocks")
         parentBlock.setStyle(blockStyleName)
     }
